@@ -1,11 +1,11 @@
 # Jobs.cz Python Job Scraper
 
-Automated scraper for Python job listings from Jobs.cz, using Playwright for web scraping and Google Docs API for storing results.
+Automated scraper for Python job listings from Jobs.cz, using BeautifulSoup for web scraping and Google Docs API for storing results.
 
 ## Features
 
 - Scrapes Python job listings from Jobs.cz
-- Uses Playwright for reliable web scraping
+- Uses BeautifulSoup and Requests for web scraping
 - Stores results in a Google Doc
 - Runs automatically via GitHub Actions
 
@@ -15,8 +15,6 @@ Automated scraper for Python job listings from Jobs.cz, using Playwright for web
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
-   python -m playwright install chromium
-   python -m playwright install-deps
    ```
 
 3. Set up Google Cloud Project:
@@ -40,7 +38,7 @@ Automated scraper for Python job listings from Jobs.cz, using Playwright for web
 ## Running Locally
 
 ```bash
-python scraper-new.py
+python scraper.py
 ```
 
 ## Deployment
@@ -53,4 +51,4 @@ The scraper is automatically run daily at 6:00 AM UTC via GitHub Actions. You ca
 
 ## License
 
-MIT # jobscz-scraping
+MIT
