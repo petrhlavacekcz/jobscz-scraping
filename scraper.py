@@ -1,5 +1,6 @@
 import os
 import json
+import logging
 from datetime import datetime
 from typing import List, Dict, Optional
 import requests
@@ -10,6 +11,17 @@ from dotenv import load_dotenv
 import re
 from abc import ABC, abstractmethod
 import time
+import sys
+
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('error.log'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
 
 # Load environment variables
 load_dotenv()
@@ -80,14 +92,14 @@ class JobScraper:
                 'Connection': 'keep-alive',
                 'Upgrade-Insecure-Requests': '1',
             }
-            print(f"Debug: Fetching URL: {url}")
+            logging.info(f"Fetching URL: {url}")
             response = requests.get(url, headers=headers, timeout=10)
             response.raise_for_status()
             
             soup = BeautifulSoup(response.text, 'html.parser')
             return soup
         except Exception as e:
-            print(f"Error fetching {url}: {str(e)}")
+            logging.error(f"Error fetching {url}: {str(e)}")
             return None
 
     def extract_job_details(self, job_item: BeautifulSoup) -> Optional[Dict]:
@@ -96,12 +108,14 @@ class JobScraper:
             # Find job title
             title_elem = job_item.find('h2', class_='SearchResultCard__title')
             if not title_elem:
+                logging.warning("No title element found in job listing")
                 return None
             title = title_elem.get_text(strip=True)
             
             # Find job URL
             url_elem = title_elem.find('a', class_='link-primary')
             if not url_elem or 'href' not in url_elem.attrs:
+                logging.warning("No URL element found in job listing")
                 return None
             url = url_elem['href']
             if not url.startswith('http'):
@@ -130,7 +144,7 @@ class JobScraper:
             }
             
         except Exception as e:
-            print(f"Error extracting job details: {str(e)}")
+            logging.error(f"Error extracting job details: {str(e)}")
             return None
 
     def get_total_pages(self) -> int:
@@ -142,12 +156,13 @@ class JobScraper:
             
             # Check if page exists
             if not soup:
+                logging.warning(f"Failed to fetch page {page}")
                 break
             
             # Check for "page not available" message
             not_available = soup.find(string=lambda text: 'Zadaná stránka už není dostupná' in str(text) if text else False)
             if not_available:
-                print(f"Page {page} not available - reached end of listings")
+                logging.info(f"Page {page} not available - reached end of listings")
                 page -= 1  # Go back one page since this one isn't valid
                 break
             
@@ -157,84 +172,90 @@ class JobScraper:
                 # Double check if we're on a "no results" page
                 no_results = soup.find('div', class_='SearchNoResults')
                 if no_results:
+                    logging.info("No results found")
                     break
                 # Also check for empty results container
                 results_container = soup.find('div', class_='SearchResultList')
                 if results_container and len(results_container.find_all('article')) == 0:
+                    logging.info("Empty results container found")
                     break
                 
-            print(f"Found {len(job_items)} jobs on page {page}")
+            logging.info(f"Found {len(job_items)} jobs on page {page}")
             page += 1
             
             # Add a small delay between requests
             time.sleep(1)
         
         total_pages = page
-        print(f"Total pages found: {total_pages}")
+        logging.info(f"Total pages found: {total_pages}")
         return total_pages
 
     def scrape_jobs(self):
         """Scrape Python jobs from jobs.cz."""
-        page = 1
-        total_jobs_found = 0
-        
-        # Get total number of pages first
-        total_pages = self.get_total_pages()  # Remove the initial_soup parameter
-        print(f"Found {total_pages} pages to scrape")
-        
-        # Find total number of jobs from first page
-        initial_url = f"{self.scraper.base_url}?q[]={self.scraper.search_params['q[]']}"
-        initial_soup = self.fetch_page(initial_url)
-        if not initial_soup:
-            print("Failed to fetch initial page")
-            return
-        
-        # Find total number of jobs
-        total_count_elem = initial_soup.find('h1', class_='SearchHeader__title')
-        if total_count_elem:
-            try:
-                count = int(''.join(filter(str.isdigit, total_count_elem.text)))
-                print(f"Total jobs found: {count}")
-            except ValueError:
-                print("Could not parse total job count")
-        
-        # Scrape each page
-        while page <= total_pages:
-            url = f"{self.scraper.base_url}?q[]={self.scraper.search_params['q[]']}"
-            if page > 1:
-                url += f"&page={page}"
+        try:
+            page = 1
+            total_jobs_found = 0
             
-            print(f"Scraping page {page} of {total_pages}...")
-            soup = self.fetch_page(url)
-            if not soup:
-                print(f"Failed to fetch page {page}")
-                break
+            # Get total number of pages first
+            total_pages = self.get_total_pages()
+            logging.info(f"Found {total_pages} pages to scrape")
             
-            # Find all job listings on the page
-            job_items = soup.find_all('article', class_='SearchResultCard')
-            if not job_items:
-                print(f"No job items found on page {page}")
-                break
+            # Find total number of jobs from first page
+            initial_url = f"{self.scraper.base_url}?q[]={self.scraper.search_params['q[]']}"
+            initial_soup = self.fetch_page(initial_url)
+            if not initial_soup:
+                logging.error("Failed to fetch initial page")
+                return
             
-            print(f"Found {len(job_items)} job items on page {page}")
-            
-            for job_item in job_items:
+            # Find total number of jobs
+            total_count_elem = initial_soup.find('h1', class_='SearchHeader__title')
+            if total_count_elem:
                 try:
-                    job_details = self.extract_job_details(job_item)
-                    if job_details:
-                        self.jobs.append(job_details)
-                        total_jobs_found += 1
-                        print(f"Scraped job {total_jobs_found}: {job_details['title']} at {job_details['company']}")
-                except Exception as e:
-                    print(f"Error scraping job on page {page}: {str(e)}")
-                    continue
+                    count = int(''.join(filter(str.isdigit, total_count_elem.text)))
+                    logging.info(f"Total jobs found: {count}")
+                except ValueError:
+                    logging.warning("Could not parse total job count")
             
-            # Add delay between pages to be nice to the server
-            if page < total_pages:
-                time.sleep(2)
-            page += 1
+            # Scrape each page
+            while page <= total_pages:
+                url = f"{self.scraper.base_url}?q[]={self.scraper.search_params['q[]']}"
+                if page > 1:
+                    url += f"&page={page}"
+                
+                logging.info(f"Scraping page {page} of {total_pages}...")
+                soup = self.fetch_page(url)
+                if not soup:
+                    logging.error(f"Failed to fetch page {page}")
+                    break
+                
+                # Find all job listings on the page
+                job_items = soup.find_all('article', class_='SearchResultCard')
+                if not job_items:
+                    logging.warning(f"No job items found on page {page}")
+                    break
+                
+                logging.info(f"Found {len(job_items)} job items on page {page}")
+                
+                for job_item in job_items:
+                    try:
+                        job_details = self.extract_job_details(job_item)
+                        if job_details:
+                            self.jobs.append(job_details)
+                            total_jobs_found += 1
+                            logging.info(f"Scraped job {total_jobs_found}: {job_details['title']} at {job_details['company']}")
+                    except Exception as e:
+                        logging.error(f"Error scraping job on page {page}: {str(e)}")
+                        continue
+                
+                # Add delay between pages to be nice to the server
+                if page < total_pages:
+                    time.sleep(2)
+                page += 1
 
-        print(f"Successfully scraped {total_jobs_found} Python jobs across {page-1} pages")
+            logging.info(f"Successfully scraped {total_jobs_found} Python jobs across {page-1} pages")
+        except Exception as e:
+            logging.error(f"Fatal error in scrape_jobs: {str(e)}")
+            raise
 
     def create_markdown_content(self) -> str:
         """Create markdown content from scraped jobs."""
@@ -293,9 +314,12 @@ class JobScraper:
             print(f"Error updating Google Doc: {str(e)}")
 
 def main():
-    scraper = JobScraper()
-    scraper.scrape_jobs()
-    scraper.update_google_doc()
+    try:
+        scraper = JobScraper()
+        scraper.scrape_jobs()
+    except Exception as e:
+        logging.error(f"Application error: {str(e)}")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main() 
