@@ -16,6 +16,7 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.12'
+        cache: 'pip'
         
     - name: Install dependencies
       run: |
@@ -33,7 +34,16 @@ jobs:
         echo "GOOGLE_DOC_ID='${{ secrets.GOOGLE_DOC_ID }}'" >> .env
         
     - name: Run scraper
-      run: python scraper-new.py
+      run: python scraper.py
+      continue-on-error: true
+      
+    - name: Check for scraper output
+      run: |
+        if [ -f "error.log" ]; then
+          echo "::error::Scraper encountered errors. Check error.log for details."
+          cat error.log
+          exit 1
+        fi
       
     - name: Commit and push if there are changes
       run: |
