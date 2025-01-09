@@ -275,15 +275,25 @@ class JobScraper:
         """Update Google Doc with job listings."""
         doc_id = os.getenv('GOOGLE_DOC_ID')
         if not doc_id:
-            print("Error: GOOGLE_DOC_ID not found in environment variables")
+            logging.error("Error: GOOGLE_DOC_ID not found in environment variables")
             return
 
         content = self.create_markdown_content()
-
+        
         try:
+            logging.info(f"Attempting to update Google Doc with ID: {doc_id}")
+            logging.info(f"Number of jobs to update: {len(self.jobs)}")
+            
             # Retrieve the document to get the current content length
-            document = self.docs_service.documents().get(documentId=doc_id).execute()
-            end_index = document.get('body').get('content')[-1].get('endIndex', 1)
+            try:
+                document = self.docs_service.documents().get(documentId=doc_id).execute()
+                logging.info("Successfully retrieved document")
+            except Exception as e:
+                logging.error(f"Failed to retrieve document: {str(e)}")
+                raise
+                
+            end_index = document.get('body', {}).get('content', [{}])[-1].get('endIndex', 1)
+            logging.info(f"Document end index: {end_index}")
 
             # Clear the existing content
             requests = [{
@@ -304,19 +314,29 @@ class JobScraper:
             })
 
             # Execute the update
-            self.docs_service.documents().batchUpdate(
-                documentId=doc_id,
-                body={'requests': requests}
-            ).execute()
+            try:
+                result = self.docs_service.documents().batchUpdate(
+                    documentId=doc_id,
+                    body={'requests': requests}
+                ).execute()
+                logging.info("Successfully updated Google Doc")
+                return True
+            except Exception as e:
+                logging.error(f"Failed to update document content: {str(e)}")
+                raise
 
-            print("Successfully updated Google Doc")
         except Exception as e:
-            print(f"Error updating Google Doc: {str(e)}")
+            logging.error(f"Error updating Google Doc: {str(e)}")
+            return False
 
 def main():
     try:
         scraper = JobScraper()
         scraper.scrape_jobs()
+        if not scraper.update_google_doc():
+            logging.error("Failed to update Google Doc")
+            sys.exit(1)
+        logging.info("Script completed successfully")
     except Exception as e:
         logging.error(f"Application error: {str(e)}")
         sys.exit(1)
