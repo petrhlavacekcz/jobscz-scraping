@@ -30,9 +30,9 @@ jobs:
         
     - name: Run scraper
       run: python scraper.py
-      continue-on-error: true
       
     - name: Check for scraper output
+      if: always()
       run: |
         if [ -f "error.log" ]; then
           if grep -i "error" error.log > /dev/null; then
