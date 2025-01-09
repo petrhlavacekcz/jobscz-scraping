@@ -134,6 +134,8 @@ class JobScraper:
             job_text = ""
             if job_soup:
                 job_text = self.scraper.extract_job_text(job_soup)
+                if not job_text:
+                    logging.warning(f"Could not find job description for {title} at {company}")
             
             return {
                 'title': title,
@@ -144,7 +146,7 @@ class JobScraper:
             }
             
         except Exception as e:
-            logging.error(f"Error extracting job details: {str(e)}")
+            logging.warning(f"Error extracting job details: {str(e)}")
             return None
 
     def get_total_pages(self) -> int:
@@ -195,6 +197,7 @@ class JobScraper:
         try:
             page = 1
             total_jobs_found = 0
+            failed_jobs = 0
             
             # Get total number of pages first
             total_pages = self.get_total_pages()
@@ -205,7 +208,7 @@ class JobScraper:
             initial_soup = self.fetch_page(initial_url)
             if not initial_soup:
                 logging.error("Failed to fetch initial page")
-                return
+                return False
             
             # Find total number of jobs
             total_count_elem = initial_soup.find('h1', class_='SearchHeader__title')
@@ -226,13 +229,15 @@ class JobScraper:
                 soup = self.fetch_page(url)
                 if not soup:
                     logging.error(f"Failed to fetch page {page}")
-                    break
+                    page += 1
+                    continue
                 
                 # Find all job listings on the page
                 job_items = soup.find_all('article', class_='SearchResultCard')
                 if not job_items:
                     logging.warning(f"No job items found on page {page}")
-                    break
+                    page += 1
+                    continue
                 
                 logging.info(f"Found {len(job_items)} job items on page {page}")
                 
@@ -243,8 +248,11 @@ class JobScraper:
                             self.jobs.append(job_details)
                             total_jobs_found += 1
                             logging.info(f"Scraped job {total_jobs_found}: {job_details['title']} at {job_details['company']}")
+                        else:
+                            failed_jobs += 1
                     except Exception as e:
-                        logging.error(f"Error scraping job on page {page}: {str(e)}")
+                        logging.warning(f"Error scraping job on page {page}: {str(e)}")
+                        failed_jobs += 1
                         continue
                 
                 # Add delay between pages to be nice to the server
@@ -253,9 +261,13 @@ class JobScraper:
                 page += 1
 
             logging.info(f"Successfully scraped {total_jobs_found} Python jobs across {page-1} pages")
+            if failed_jobs > 0:
+                logging.warning(f"Failed to scrape {failed_jobs} jobs")
+            return total_jobs_found > 0
+
         except Exception as e:
             logging.error(f"Fatal error in scrape_jobs: {str(e)}")
-            raise
+            return False
 
     def create_markdown_content(self) -> str:
         """Create markdown content from scraped jobs."""
@@ -332,7 +344,9 @@ class JobScraper:
 def main():
     try:
         scraper = JobScraper()
-        scraper.scrape_jobs()
+        if not scraper.scrape_jobs():
+            logging.error("Failed to scrape any jobs")
+            sys.exit(1)
         if not scraper.update_google_doc():
             logging.error("Failed to update Google Doc")
             sys.exit(1)
