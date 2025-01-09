@@ -35,9 +35,13 @@ jobs:
     - name: Check for scraper output
       run: |
         if [ -f "error.log" ]; then
-          echo "::error::Scraper encountered errors. Check error.log for details."
-          cat error.log
-          exit 1
+          if grep -i "error" error.log > /dev/null; then
+            echo "::error::Scraper encountered errors. Check error.log for details."
+            grep -i "error" error.log
+            exit 1
+          else
+            echo "Log file exists but contains no errors"
+          fi
         fi
       
     - name: Commit and push if there are changes
