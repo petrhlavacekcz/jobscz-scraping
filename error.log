@@ -1959,3 +1959,834 @@
 2025-01-09 17:34:13,924 - INFO - Document end index: 455692
 2025-01-09 17:34:22,206 - INFO - Successfully updated Google Doc
 2025-01-09 17:34:22,212 - INFO - Script completed successfully
+2025-01-16 18:11:03,357 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-01-16 18:11:03,359 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=1
+2025-01-16 18:11:05,026 - INFO - Found 30 jobs on page 1
+2025-01-16 18:11:06,027 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=2
+2025-01-16 18:11:07,704 - INFO - Found 30 jobs on page 2
+2025-01-16 18:11:08,709 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=3
+2025-01-16 18:11:10,120 - INFO - Found 30 jobs on page 3
+2025-01-16 18:11:11,122 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=4
+2025-01-16 18:11:12,825 - INFO - Found 30 jobs on page 4
+2025-01-16 18:11:13,828 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=5
+2025-01-16 18:11:15,309 - INFO - Found 30 jobs on page 5
+2025-01-16 18:11:16,314 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=6
+2025-01-16 18:11:17,766 - INFO - Found 30 jobs on page 6
+2025-01-16 18:11:18,770 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=7
+2025-01-16 18:11:20,339 - INFO - Found 30 jobs on page 7
+2025-01-16 18:11:21,345 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=8
+2025-01-16 18:11:23,027 - INFO - Found 30 jobs on page 8
+2025-01-16 18:11:24,033 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=9
+2025-01-16 18:11:25,820 - INFO - Found 30 jobs on page 9
+2025-01-16 18:11:26,825 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=10
+2025-01-16 18:11:28,345 - INFO - Found 30 jobs on page 10
+2025-01-16 18:11:29,345 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=11
+2025-01-16 18:11:30,661 - INFO - Found 8 jobs on page 11
+2025-01-16 18:11:31,667 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=12
+2025-01-16 18:11:34,076 - INFO - Page 12 not available - reached end of listings
+2025-01-16 18:11:34,076 - INFO - Total pages found: 11
+2025-01-16 18:11:34,076 - INFO - Found 11 pages to scrape
+2025-01-16 18:11:34,076 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python
+2025-01-16 18:11:35,541 - INFO - Scraping page 1 of 11...
+2025-01-16 18:11:35,542 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python
+2025-01-16 18:11:36,822 - INFO - Found 30 job items on page 1
+2025-01-16 18:11:36,823 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000447560/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:37,468 - INFO - Scraped job 1: Databricks / Python developer - 4 dny v týdnu remote at BARTON Consulting s.r.o.
+2025-01-16 18:11:37,468 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000434787/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:38,099 - INFO - Scraped job 2: Junior Python/C++ vývojář at 24U s.r.o.
+2025-01-16 18:11:38,100 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000450571/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:38,832 - INFO - Scraped job 3: Senior Backend Engineer (Python/AWS) at Stats Perform
+2025-01-16 18:11:38,832 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000447220/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:40,155 - WARNING - Could not find job description for Python programátor/ka  pro DevOps tým at Generali Česká pojišťovna
+2025-01-16 18:11:40,155 - INFO - Scraped job 4: Python programátor/ka  pro DevOps tým at Generali Česká pojišťovna
+2025-01-16 18:11:40,155 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000472225/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:41,975 - WARNING - Could not find job description for Medior/Senior Python vývojář at Thermo Fisher Scientific
+2025-01-16 18:11:41,975 - INFO - Scraped job 5: Medior/Senior Python vývojář at Thermo Fisher Scientific
+2025-01-16 18:11:41,975 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000391730/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:43,211 - WARNING - Could not find job description for Python-Developer-Embedded at Thermo Fisher Scientific
+2025-01-16 18:11:43,211 - INFO - Scraped job 6: Python-Developer-Embedded at Thermo Fisher Scientific
+2025-01-16 18:11:43,212 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000445212/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:44,553 - WARNING - Could not find job description for PYTHON/JAVA DEVELOPER at Raiffeisenbank a.s.
+2025-01-16 18:11:44,554 - INFO - Scraped job 7: PYTHON/JAVA DEVELOPER at Raiffeisenbank a.s.
+2025-01-16 18:11:44,554 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466305/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:46,058 - WARNING - Could not find job description for Python vývojář/ka automatizovaných testů pro Cyber Security řešení v R&D at Siemens Mobility, s.r.o.
+2025-01-16 18:11:46,059 - INFO - Scraped job 8: Python vývojář/ka automatizovaných testů pro Cyber Security řešení v R&D at Siemens Mobility, s.r.o.
+2025-01-16 18:11:46,059 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466287/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:47,255 - WARNING - Could not find job description for Python vývojář/ka automatizovaných testů pro Cyber Security řešení v R&D (OS Linux) at Siemens Mobility, s.r.o.
+2025-01-16 18:11:47,255 - INFO - Scraped job 9: Python vývojář/ka automatizovaných testů pro Cyber Security řešení v R&D (OS Linux) at Siemens Mobility, s.r.o.
+2025-01-16 18:11:47,255 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000384872/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:47,974 - INFO - Scraped job 10: Python vývojář se zájmem o Machine Learning (m/ž) at TIPSPORT a.s.
+2025-01-16 18:11:47,974 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000468115/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:49,406 - WARNING - Could not find job description for Python Developer AI - Projekt digitální asistentka at Agnostix, s.r.o.
+2025-01-16 18:11:49,406 - INFO - Scraped job 11: Python Developer AI - Projekt digitální asistentka at Agnostix, s.r.o.
+2025-01-16 18:11:49,407 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000462295/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:50,060 - INFO - Scraped job 12: Hledá se Python vývojář - 2 různé projekty - AI a Cyber Security, vyber si! at Jobs Contact Personal, s.r.o.
+2025-01-16 18:11:50,060 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000448918/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:50,697 - INFO - Scraped job 13: Python vývojář at PODA a.s.
+2025-01-16 18:11:50,698 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000450222/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:52,272 - WARNING - Could not find job description for Automation Engineer se zaměřením na Python a rozvoj frameworku at ComAp a.s.
+2025-01-16 18:11:52,272 - INFO - Scraped job 14: Automation Engineer se zaměřením na Python a rozvoj frameworku at ComAp a.s.
+2025-01-16 18:11:52,272 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000197804/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:53,237 - INFO - Scraped job 15: APLIKAČNÍ VÝVOJÁŘ - PYTHON a C++ (pro ABSOLVENTY VŠ IT) at Seyfor, a. s.
+2025-01-16 18:11:53,237 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000422028/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:53,937 - INFO - Scraped job 16: Software Developer pro Luxonis (Python) at Luxonis Holding Corporation
+2025-01-16 18:11:53,938 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000376862/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:54,961 - INFO - Scraped job 17: Embedded Test Automation Engineer (Python) at BTL Medical
+2025-01-16 18:11:54,962 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000461265/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:55,715 - INFO - Scraped job 18: Python programátor at DANTEM
+2025-01-16 18:11:55,715 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000461626/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:56,362 - INFO - Scraped job 19: Návrh světových analog a digital obvodů, validace a Python! (80-105.000 Kč) at Jobs Contact Personal, s.r.o.
+2025-01-16 18:11:56,362 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000450365/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:57,412 - INFO - Scraped job 20: Python Backend Developer at Seznam.cz, a.s.
+2025-01-16 18:11:57,413 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000460939/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:58,121 - INFO - Scraped job 21: FINANCIAL DATA ANALYST (SQL, Python, Power BI)- MEZINÁRODNÍ FINANČNÍ SPOLEČNOST at DRILL Business Services
+2025-01-16 18:11:58,121 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000428880/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:11:59,761 - WARNING - Could not find job description for Senior AWS/Cloud Developer at Konplan s.r.o.
+2025-01-16 18:11:59,761 - INFO - Scraped job 22: Senior AWS/Cloud Developer at Konplan s.r.o.
+2025-01-16 18:11:59,761 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000472553/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:12:00,396 - INFO - Scraped job 23: Backend Developer at Marketup s.r.o.
+2025-01-16 18:12:00,397 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466772/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:12:01,859 - WARNING - Could not find job description for Datový analytik & vývojář – Consultant (Brno) at KPMG Česká republika, s.r.o.
+2025-01-16 18:12:01,859 - INFO - Scraped job 24: Datový analytik & vývojář – Consultant (Brno) at KPMG Česká republika, s.r.o.
+2025-01-16 18:12:01,859 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466771/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:12:03,221 - WARNING - Could not find job description for Datový analytik & vývojář – Consultant at KPMG Česká republika, s.r.o.
+2025-01-16 18:12:03,221 - INFO - Scraped job 25: Datový analytik & vývojář – Consultant at KPMG Česká republika, s.r.o.
+2025-01-16 18:12:03,221 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000425017/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:12:04,975 - WARNING - Could not find job description for Senior Data Engineer at Deutsche Telekom Services Europe Czech Republic s.r.o.
+2025-01-16 18:12:04,975 - INFO - Scraped job 26: Senior Data Engineer at Deutsche Telekom Services Europe Czech Republic s.r.o.
+2025-01-16 18:12:04,975 - INFO - Fetching URL: https://www.jobs.cz/rpd/1594416698/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:12:05,717 - INFO - Scraped job 27: Computer Vision vývojář - Buďte součástí AI revoluce! at Luxonis Holding Corporation
+2025-01-16 18:12:05,717 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000407973/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:12:06,745 - INFO - Scraped job 28: Výzkumník strojového učení pro Vyhledávání at Seznam.cz, a.s.
+2025-01-16 18:12:06,745 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000458375/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:12:08,206 - WARNING - Could not find job description for C++ vývojář/ka automatizovaných testů pro Cyber Security řešení v R&D at Siemens Mobility, s.r.o.
+2025-01-16 18:12:08,206 - INFO - Scraped job 29: C++ vývojář/ka automatizovaných testů pro Cyber Security řešení v R&D at Siemens Mobility, s.r.o.
+2025-01-16 18:12:08,207 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000323380/?searchId=d1aea9eb-271d-4cf5-9f22-cd6227fe5ce4&rps=233
+2025-01-16 18:12:10,141 - WARNING - Could not find job description for Software Engineer, Senior at ZEBRA TECHNOLOGIES EUROPE LIMITED
+2025-01-16 18:12:10,141 - INFO - Scraped job 30: Software Engineer, Senior at ZEBRA TECHNOLOGIES EUROPE LIMITED
+2025-01-16 18:12:12,146 - INFO - Scraping page 2 of 11...
+2025-01-16 18:12:12,146 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=2
+2025-01-16 18:12:13,561 - INFO - Found 30 job items on page 2
+2025-01-16 18:12:13,561 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000286566/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:15,178 - WARNING - Could not find job description for DevOps Engineer, II at ZEBRA TECHNOLOGIES EUROPE LIMITED
+2025-01-16 18:12:15,178 - INFO - Scraped job 31: DevOps Engineer, II at ZEBRA TECHNOLOGIES EUROPE LIMITED
+2025-01-16 18:12:15,178 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000452258/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:15,826 - INFO - Scraped job 32: 👨‍💻C++ Windows Developer! Buďte u vývoje špičkových technologií ! at DevCom, spol. s r.o.
+2025-01-16 18:12:15,826 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000391652/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:17,358 - WARNING - Could not find job description for SW Developer at Konplan s.r.o.
+2025-01-16 18:12:17,358 - INFO - Scraped job 33: SW Developer at Konplan s.r.o.
+2025-01-16 18:12:17,359 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000426408/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:18,753 - INFO - Scraped job 34: Big data expert for ESET PROTECT Platform at ESET Research Czech Republic s.r.o.
+2025-01-16 18:12:18,753 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000317273/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:19,550 - INFO - Scraped job 35: Software engineer at Edhouse s.r.o.
+2025-01-16 18:12:19,550 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000413699/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:20,879 - WARNING - Could not find job description for HIL Automation Engineer at Akkodis CZ s.r.o.
+2025-01-16 18:12:20,880 - INFO - Scraped job 36: HIL Automation Engineer at Akkodis CZ s.r.o.
+2025-01-16 18:12:20,880 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000441737/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:22,517 - WARNING - Could not find job description for Cloud Solution Architect at Alma Career Czechia s.r.o.
+2025-01-16 18:12:22,518 - INFO - Scraped job 37: Cloud Solution Architect at Alma Career Czechia s.r.o.
+2025-01-16 18:12:22,518 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000470087/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:23,315 - INFO - Scraped job 38: Vývojář technologického IS at GETBID Staffing s.r.o.
+2025-01-16 18:12:23,316 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000442377/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:24,808 - WARNING - Could not find job description for Data Science & Analytics Specialist (m/ž) at O2 Czech Republic a.s.
+2025-01-16 18:12:24,808 - INFO - Scraped job 39: Data Science & Analytics Specialist (m/ž) at O2 Czech Republic a.s.
+2025-01-16 18:12:24,808 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000467648/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:25,798 - INFO - Scraped job 40: Senior Backend Engineer pro datovou platformu at Seznam.cz, a.s.
+2025-01-16 18:12:25,799 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000438903/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:26,581 - INFO - Scraped job 41: Vývojáře technologického informačního systému at Shimano Czech Republic, s.r.o.
+2025-01-16 18:12:26,581 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000425028/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:27,949 - WARNING - Could not find job description for Full Stack Developer for LLM agent applications at Deutsche Telekom Services Europe Czech Republic s.r.o.
+2025-01-16 18:12:27,950 - INFO - Scraped job 42: Full Stack Developer for LLM agent applications at Deutsche Telekom Services Europe Czech Republic s.r.o.
+2025-01-16 18:12:27,950 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000451036/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:28,547 - INFO - Scraped job 43: SW developer at Wolters Kluwer ČR, a.s.
+2025-01-16 18:12:28,548 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000464709/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:29,941 - WARNING - Could not find job description for Computer Vision Engineer at Škoda Digital
+2025-01-16 18:12:29,941 - INFO - Scraped job 44: Computer Vision Engineer at Škoda Digital
+2025-01-16 18:12:29,941 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000450964/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:30,811 - INFO - Scraped job 45: Software engineer C++ at Edhouse s.r.o.
+2025-01-16 18:12:30,811 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000423616/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:31,485 - INFO - Scraped job 46: Data Engineer/BI Developer (Junior/Medior) at NoseDat s.r.o.
+2025-01-16 18:12:31,486 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000450566/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:32,208 - INFO - Scraped job 47: Senior Backend Engineer – Java focus at Stats Perform
+2025-01-16 18:12:32,209 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000448685/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:32,851 - INFO - Scraped job 48: DATA ARCHITECT at Perfect Consulting CZ
+2025-01-16 18:12:32,851 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000455331/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:33,637 - INFO - Scraped job 49: Javascript Developer for Voice Applications at SOITRON s.r.o.
+2025-01-16 18:12:33,637 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000462013/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:34,363 - INFO - Scraped job 50: PHP developer s pokročilou znalostí Laravel či Nette a Symfony at TAKTIK International s.r.o. , organizační složka
+2025-01-16 18:12:34,363 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000460906/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:35,465 - INFO - Scraped job 51: DATA ENGINEER - objevuj s námi svět Big Data! at ADASTRA, s.r.o.
+2025-01-16 18:12:35,465 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000460712/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:36,060 - INFO - Scraped job 52: Programmer for Game Development at SCS Software s.r.o.
+2025-01-16 18:12:36,060 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000132456/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:36,648 - INFO - Scraped job 53: Quantasoft hledá full stack C# programátora at Quantasoft, s.r.o.
+2025-01-16 18:12:36,649 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000341007/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:37,581 - INFO - Scraped job 54: Analytik | Tester pro stavební software at Dlubal Software s.r.o.
+2025-01-16 18:12:37,581 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000401261/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:38,318 - INFO - Scraped job 55: C++ programátor - dlouhodobá spolupráce na celosvětovém produktu at Compelson s.r.o.
+2025-01-16 18:12:38,319 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000379804/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:39,034 - INFO - Scraped job 56: AI Software Engineer at Antal International s.r.o.
+2025-01-16 18:12:39,035 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000449323/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:39,964 - INFO - Scraped job 57: Application Engineer at Advantech Czech s.r.o.
+2025-01-16 18:12:39,964 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000460893/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:40,637 - INFO - Scraped job 58: Programátor obchodního systému v Pythonu (60-85.000 Kč) at Jobs Contact Personal, s.r.o.
+2025-01-16 18:12:40,637 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000460393/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:42,522 - WARNING - Could not find job description for Full-stack Developer at NN
+2025-01-16 18:12:42,523 - INFO - Scraped job 59: Full-stack Developer at NN
+2025-01-16 18:12:42,523 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000459661/?searchId=8e043405-6ba9-43d1-872f-76f6574025ec&rps=233
+2025-01-16 18:12:43,325 - INFO - Scraped job 60: Programátor ERP at PŘEDVÝBĚR.CZ s.r.o.
+2025-01-16 18:12:45,330 - INFO - Scraping page 3 of 11...
+2025-01-16 18:12:45,330 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=3
+2025-01-16 18:12:47,405 - INFO - Found 30 job items on page 3
+2025-01-16 18:12:47,405 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000452496/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:12:48,791 - WARNING - Could not find job description for Specialista SW podpory BIM projektů at ÚJV Řež, a. s.
+2025-01-16 18:12:48,792 - INFO - Scraped job 61: Specialista SW podpory BIM projektů at ÚJV Řež, a. s.
+2025-01-16 18:12:48,792 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000451778/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:12:49,497 - INFO - Scraped job 62: Data Engineer at PŘEDVÝBĚR.CZ s.r.o.
+2025-01-16 18:12:49,497 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000333463/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:12:50,964 - WARNING - Could not find job description for Prompt Engineer (m/ž) - O2 IT Services at O2 Czech Republic a.s.
+2025-01-16 18:12:50,965 - INFO - Scraped job 63: Prompt Engineer (m/ž) - O2 IT Services at O2 Czech Republic a.s.
+2025-01-16 18:12:50,966 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000448323/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:12:52,409 - WARNING - Could not find job description for Junior SW Tester at Akkodis CZ s.r.o.
+2025-01-16 18:12:52,409 - INFO - Scraped job 64: Junior SW Tester at Akkodis CZ s.r.o.
+2025-01-16 18:12:52,410 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000456702/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:12:54,039 - WARNING - Could not find job description for SENIOR TRADING SOFTWARE ENGINEER – CONSULTANT, QA AND DEVELOPER at ČEZ, a. s.
+2025-01-16 18:12:54,039 - INFO - Scraped job 65: SENIOR TRADING SOFTWARE ENGINEER – CONSULTANT, QA AND DEVELOPER at ČEZ, a. s.
+2025-01-16 18:12:54,039 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000445616/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:12:55,282 - WARNING - Could not find job description for Data Engineer, II at ZEBRA TECHNOLOGIES EUROPE LIMITED
+2025-01-16 18:12:55,282 - INFO - Scraped job 66: Data Engineer, II at ZEBRA TECHNOLOGIES EUROPE LIMITED
+2025-01-16 18:12:55,283 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000471447/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:12:56,068 - INFO - Scraped job 67: Tester at ERA a.s.
+2025-01-16 18:12:56,068 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000474109/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:12:56,664 - INFO - Scraped job 68: Analyst at ENETIQA Trading s.r.o.
+2025-01-16 18:12:56,664 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000463638/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:12:57,403 - INFO - Scraped job 69: Data Science Analytik at ACREA CR, spol. s r.o.
+2025-01-16 18:12:57,404 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000472940/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:12:58,058 - INFO - Scraped job 70: SW developer / architect pro AVIATION at VZLU AEROSPACE, a.s.
+2025-01-16 18:12:58,058 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000472770/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:12:58,678 - INFO - Scraped job 71: IT Datový*á analytik*čka at Fyzikální ústav AV ČR, v. v. i.
+2025-01-16 18:12:58,679 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000321758/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:00,267 - WARNING - Could not find job description for Simulation Engineer at Konplan s.r.o.
+2025-01-16 18:13:00,267 - INFO - Scraped job 72: Simulation Engineer at Konplan s.r.o.
+2025-01-16 18:13:00,267 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000461864/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:00,894 - INFO - Scraped job 73: Observability Consultant/Engineer at TSP DATA, a.s.
+2025-01-16 18:13:00,894 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000322892/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:02,225 - WARNING - Could not find job description for Senior Machine Learning Engineer at ČEPS, a.s.
+2025-01-16 18:13:02,225 - INFO - Scraped job 74: Senior Machine Learning Engineer at ČEPS, a.s.
+2025-01-16 18:13:02,225 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000468395/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:03,943 - WARNING - Could not find job description for IT specialista / IT specialistka at HAVEL & PARTNERS s.r.o., advokátní kancelář
+2025-01-16 18:13:03,944 - INFO - Scraped job 75: IT specialista / IT specialistka at HAVEL & PARTNERS s.r.o., advokátní kancelář
+2025-01-16 18:13:03,944 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000457535/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:04,649 - INFO - Scraped job 76: DevSecOps Engineer at Národní úřad pro kybernetickou a informační bezpečnost
+2025-01-16 18:13:04,649 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000386670/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:06,334 - WARNING - Could not find job description for Catastrophe Model Developer - Flood at Aon Central and Eastern Europe a.s.
+2025-01-16 18:13:06,334 - INFO - Scraped job 77: Catastrophe Model Developer - Flood at Aon Central and Eastern Europe a.s.
+2025-01-16 18:13:06,334 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000417567/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:07,369 - INFO - Scraped job 78: Vývojář AI produktů (Brno/Praha/Zlín) at Seznam.cz, a.s.
+2025-01-16 18:13:07,369 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000385187/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:08,436 - INFO - Scraped job 79: Výzkumník strojového učení pro e-commerce at Seznam.cz, a.s.
+2025-01-16 18:13:08,436 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000339987/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:09,520 - INFO - Scraped job 80: Výzkumník strojového učení pro Vyhledávání at Seznam.cz, a.s.
+2025-01-16 18:13:09,521 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000366186/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:11,113 - WARNING - Could not find job description for DevOps inženýr - Praha at ICZ a.s.
+2025-01-16 18:13:11,113 - INFO - Scraped job 81: DevOps inženýr - Praha at ICZ a.s.
+2025-01-16 18:13:11,114 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000465126/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:11,816 - INFO - Scraped job 82: Full-Stack Developer at Národní úřad pro kybernetickou a informační bezpečnost
+2025-01-16 18:13:11,816 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000463932/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:12,966 - WARNING - Could not find job description for Backend vývojář integračních služeb at CETIN a.s.
+2025-01-16 18:13:12,966 - INFO - Scraped job 83: Backend vývojář integračních služeb at CETIN a.s.
+2025-01-16 18:13:12,967 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000420738/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:14,569 - WARNING - Could not find job description for Senior Data analytik at R4U s.r.o.
+2025-01-16 18:13:14,569 - INFO - Scraped job 84: Senior Data analytik at R4U s.r.o.
+2025-01-16 18:13:14,569 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000448600/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:15,214 - INFO - Scraped job 85: DevOps engineer at Edhouse s.r.o.
+2025-01-16 18:13:15,214 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000218269/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:16,156 - INFO - Scraped job 86: Data Scientist / ML Engineer  (Senior/Medior) at Profinit EU, s.r.o.
+2025-01-16 18:13:16,156 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000454906/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:16,766 - INFO - Scraped job 87: Senior SW tester s láskou k přírodě (50.000 - 70.000 Kč) at Jobs Contact Personal, s.r.o.
+2025-01-16 18:13:16,766 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000457426/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:17,589 - INFO - Scraped job 88: DATOVÝ ANALYTIK OTEVŘENÝCH ZDROJŮ at Bezpečnostní informační služba
+2025-01-16 18:13:17,590 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000452017/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:18,937 - WARNING - Could not find job description for Data Engineer for Voyo at TV Nova s.r.o.
+2025-01-16 18:13:18,937 - INFO - Scraped job 89: Data Engineer for Voyo at TV Nova s.r.o.
+2025-01-16 18:13:18,937 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000431143/?searchId=514af53f-f6c4-498c-b820-c736149b0920&rps=233
+2025-01-16 18:13:19,572 - INFO - Scraped job 90: Senior Data Platform Developer at Kompan Czech Republic s.r.o.
+2025-01-16 18:13:21,578 - INFO - Scraping page 4 of 11...
+2025-01-16 18:13:21,578 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=4
+2025-01-16 18:13:22,999 - INFO - Found 30 job items on page 4
+2025-01-16 18:13:22,999 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000410159/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:24,675 - WARNING - Could not find job description for Internship - Advanced Technologies Scientist at Thermo Fisher Scientific
+2025-01-16 18:13:24,676 - INFO - Scraped job 91: Internship - Advanced Technologies Scientist at Thermo Fisher Scientific
+2025-01-16 18:13:24,676 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000437015/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:25,707 - INFO - Scraped job 92: Výzkumník pro Mapy.cz at Seznam.cz, a.s.
+2025-01-16 18:13:25,707 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000456335/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:27,140 - WARNING - Could not find job description for BI ANALYTIK JUNIOR (M/Ž) at Pražská plynárenská, a.s.
+2025-01-16 18:13:27,140 - INFO - Scraped job 93: BI ANALYTIK JUNIOR (M/Ž) at Pražská plynárenská, a.s.
+2025-01-16 18:13:27,140 - INFO - Fetching URL: https://www.jobs.cz/rpd/1632282541/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:28,676 - WARNING - Could not find job description for Data Scientist for movies and TV series - Nova AI Centre at TV Nova s.r.o.
+2025-01-16 18:13:28,676 - INFO - Scraped job 94: Data Scientist for movies and TV series - Nova AI Centre at TV Nova s.r.o.
+2025-01-16 18:13:28,676 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000399599/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:30,235 - WARNING - Could not find job description for Databázový/á specialista/tka at ČEPS, a.s.
+2025-01-16 18:13:30,235 - INFO - Scraped job 95: Databázový/á specialista/tka at ČEPS, a.s.
+2025-01-16 18:13:30,235 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000425158/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:31,184 - INFO - Scraped job 96: Senior BI Analyst at DoDo Czech s.r.o.
+2025-01-16 18:13:31,184 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000390080/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:32,563 - INFO - Scraped job 97: Data Engineer at W.A.G. payment solutions, a.s.
+2025-01-16 18:13:32,564 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000452248/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:33,866 - WARNING - Could not find job description for Infrastructure Security Engineer at Alpiq Services CZ s.r.o.
+2025-01-16 18:13:33,866 - INFO - Scraped job 98: Infrastructure Security Engineer at Alpiq Services CZ s.r.o.
+2025-01-16 18:13:33,866 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000464690/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:34,661 - INFO - Scraped job 99: Performance QA Engineer at Veeam Software (Czech Republic) s.r.o.
+2025-01-16 18:13:34,662 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000473902/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:35,569 - INFO - Scraped job 100: Medior / Senior Linux administrátor at BARTON Consulting s.r.o.
+2025-01-16 18:13:35,569 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000464409/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:37,198 - INFO - Scraped job 101: Senior Data Engineer at Make
+2025-01-16 18:13:37,199 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000464405/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:39,277 - INFO - Scraped job 102: Senior Data Engineer at Make
+2025-01-16 18:13:39,278 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000445637/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:40,414 - INFO - Scraped job 103: DevOps Engineer at CGI CS&EE
+2025-01-16 18:13:40,415 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000464259/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:41,521 - INFO - Scraped job 104: BI Consultant at ADASTRA, s.r.o.
+2025-01-16 18:13:41,521 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000473772/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:42,725 - INFO - Scraped job 105: Biostatistik/Biostatistička pro Centrum excelence CREATIC at Masarykova univerzita
+2025-01-16 18:13:42,725 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000379550/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:43,440 - INFO - Scraped job 106: IT konzultant pro řešení správy dokumentů v SAP at IXTENT s.r.o.
+2025-01-16 18:13:43,440 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000460916/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:44,338 - INFO - Scraped job 107: Data manažer / manažerka pro Centrum excelence CREATIC at Masarykova univerzita
+2025-01-16 18:13:44,339 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000454871/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:47,056 - WARNING - Could not find job description for DevOps Engineer at Konplan s.r.o.
+2025-01-16 18:13:47,056 - INFO - Scraped job 108: DevOps Engineer at Konplan s.r.o.
+2025-01-16 18:13:47,056 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000473638/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:47,868 - INFO - Scraped job 109: IT analytik at LogiCall Česká republika, s.r.o.
+2025-01-16 18:13:47,869 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000447431/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:49,548 - WARNING - Could not find job description for SW Tester (M/Ž) at Rieter CZ s.r.o.
+2025-01-16 18:13:49,548 - INFO - Scraped job 110: SW Tester (M/Ž) at Rieter CZ s.r.o.
+2025-01-16 18:13:49,548 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000436739/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:50,439 - INFO - Scraped job 111: Data Engineer at ADASTRA, s.r.o.
+2025-01-16 18:13:50,439 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000433673/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:51,560 - INFO - Scraped job 112: Vývojář webových a databázových aplikací (i pro absolventy) at 24U s.r.o.
+2025-01-16 18:13:51,561 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000473344/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:52,257 - INFO - Scraped job 113: Senior Backend Developer – Projects (Sustainability / Water domain) at DHI a.s.
+2025-01-16 18:13:52,258 - INFO - Fetching URL: https://www.jobs.cz/rpd/1630792905/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:53,736 - WARNING - Could not find job description for Intraday Trading Analyst at Powertica Commodities AG, odštěpný závod
+2025-01-16 18:13:53,736 - INFO - Scraped job 114: Intraday Trading Analyst at Powertica Commodities AG, odštěpný závod
+2025-01-16 18:13:53,736 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000442487/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:54,835 - INFO - Scraped job 115: Expert for industrial image processing and camera systems at Wacker-Chemie, s.r.o.
+2025-01-16 18:13:54,836 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000415942/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:55,520 - INFO - Scraped job 116: SW Quality Engineer / Tester - převážně manuální testy, hybridní režim at BARTON Consulting s.r.o.
+2025-01-16 18:13:55,521 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000473155/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:56,240 - INFO - Scraped job 117: BI DWH Developer - Bodycote (Prague) at Bodycote SSC s.r.o.
+2025-01-16 18:13:56,240 - INFO - Fetching URL: https://www.jobs.cz/rpd/1596467519/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:57,971 - WARNING - Could not find job description for PLC programátor jednoúčelových strojů a stroj.zařízení PRAHA at Process Automation Solutions s.r.o.
+2025-01-16 18:13:57,971 - INFO - Scraped job 118: PLC programátor jednoúčelových strojů a stroj.zařízení PRAHA at Process Automation Solutions s.r.o.
+2025-01-16 18:13:57,971 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000448045/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:59,058 - INFO - Scraped job 119: IT SECURITY SPECIALIST at TRINITY BANK a.s.
+2025-01-16 18:13:59,058 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000473091/?searchId=6dc60300-9197-4f1c-a03d-362667daedb4&rps=233
+2025-01-16 18:13:59,961 - INFO - Scraped job 120: Senior Software Inženýr/ka pro C++ at ESET Research Czech Republic s.r.o.
+2025-01-16 18:14:01,964 - INFO - Scraping page 5 of 11...
+2025-01-16 18:14:01,964 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=5
+2025-01-16 18:14:03,335 - INFO - Found 30 job items on page 5
+2025-01-16 18:14:03,336 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000392797/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:04,313 - INFO - Scraped job 121: Junior Software Engineer for C++ at ESET Research Czech Republic s.r.o.
+2025-01-16 18:14:04,313 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000393148/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:05,298 - INFO - Scraped job 122: Medior Software Engineer for C++ at ESET Research Czech Republic s.r.o.
+2025-01-16 18:14:05,298 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000463485/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:06,047 - INFO - Scraped job 123: Software engineer RUST (praxe) at Edhouse s.r.o.
+2025-01-16 18:14:06,047 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000226334/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:06,657 - INFO - Scraped job 124: Operátor řídicích systémů (172) at Extreme Light Infrastructure ERIC (ELI ERIC)
+2025-01-16 18:14:06,657 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000472746/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:07,422 - INFO - Scraped job 125: Linux Administrátor at Antal International s.r.o.
+2025-01-16 18:14:07,422 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000472727/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:09,217 - WARNING - Could not find job description for Data stevard - DLM at ČSOB Pojišťovna, a. s., člen holdingu ČSOB
+2025-01-16 18:14:09,217 - INFO - Scraped job 126: Data stevard - DLM at ČSOB Pojišťovna, a. s., člen holdingu ČSOB
+2025-01-16 18:14:09,217 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000462924/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:10,033 - INFO - Scraped job 127: Senior Datový analytik/ Business analytik at ALEF Distribution CZ, s.r.o.
+2025-01-16 18:14:10,033 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000472399/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:11,625 - WARNING - Could not find job description for Automotive SW Engineer / SW Design Specialista / Vývojář SW at BRANO GROUP, a.s.
+2025-01-16 18:14:11,625 - INFO - Scraped job 128: Automotive SW Engineer / SW Design Specialista / Vývojář SW at BRANO GROUP, a.s.
+2025-01-16 18:14:11,625 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000472244/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:12,313 - INFO - Scraped job 129: Analytik/Analytička v oblasti revize výdajů státu at Ministerstvo financí
+2025-01-16 18:14:12,313 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000462283/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:13,296 - INFO - Scraped job 130: ESG Consultant at ACTUM Digital
+2025-01-16 18:14:13,297 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000461309/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:14,332 - INFO - Scraped job 131: Cloud Automation Engineer at SOITRON s.r.o.
+2025-01-16 18:14:14,332 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000399273/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:16,159 - WARNING - Could not find job description for Specialista oddělení správy výrobních kusovníků at Steelcase Czech Republic s.r.o.
+2025-01-16 18:14:16,159 - INFO - Scraped job 132: Specialista oddělení správy výrobních kusovníků at Steelcase Czech Republic s.r.o.
+2025-01-16 18:14:16,159 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000471569/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:16,980 - INFO - Scraped job 133: Firmware Test Engineer at Resideo
+2025-01-16 18:14:16,980 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000471385/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:17,732 - INFO - Scraped job 134: Vedoucí oddělení vývoje a analýzy at Fakultní nemocnice Bulovka
+2025-01-16 18:14:17,732 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000431704/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:19,286 - WARNING - Could not find job description for INFORMATION SECURITY LEAD (m/f) at TE connectivity
+2025-01-16 18:14:19,286 - INFO - Scraped job 135: INFORMATION SECURITY LEAD (m/f) at TE connectivity
+2025-01-16 18:14:19,287 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000445479/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:20,969 - WARNING - Could not find job description for Endpoint Detection and Response (EDR) TECH Lead #Praha/Brno 🔐 at Aricoma
+2025-01-16 18:14:20,970 - INFO - Scraped job 136: Endpoint Detection and Response (EDR) TECH Lead #Praha/Brno 🔐 at Aricoma
+2025-01-16 18:14:20,970 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000471056/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:22,699 - WARNING - Could not find job description for Group Data Analyst at Fortuna Group
+2025-01-16 18:14:22,699 - INFO - Scraped job 137: Group Data Analyst at Fortuna Group
+2025-01-16 18:14:22,699 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000471022/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:24,067 - WARNING - Could not find job description for Junior DevOps Engineer at embedIT
+2025-01-16 18:14:24,067 - INFO - Scraped job 138: Junior DevOps Engineer at embedIT
+2025-01-16 18:14:24,067 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000409314/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:25,525 - INFO - Scraped job 139: Data Analyst at ADASTRA, s.r.o.
+2025-01-16 18:14:25,525 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000460798/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:26,454 - INFO - Scraped job 140: DevOps Engineer at Phonexia s.r.o.
+2025-01-16 18:14:26,455 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000460772/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:27,187 - INFO - Scraped job 141: SW vývojář - C#/.NET - Computer Vision - Desktop Apps at X-Sight s.r.o.
+2025-01-16 18:14:27,189 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000352748/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:28,848 - WARNING - Could not find job description for Business Analyst - Ostrov (Karlovy Vary) (m/f/d) at ZF Automotive Czech s.r.o. - Frýdlant
+2025-01-16 18:14:28,848 - INFO - Scraped job 142: Business Analyst - Ostrov (Karlovy Vary) (m/f/d) at ZF Automotive Czech s.r.o. - Frýdlant
+2025-01-16 18:14:28,848 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000261382/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:30,452 - WARNING - Could not find job description for Security Specialist at Notino s.r.o.
+2025-01-16 18:14:30,452 - INFO - Scraped job 143: Security Specialist at Notino s.r.o.
+2025-01-16 18:14:30,452 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000460490/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:31,128 - INFO - Scraped job 144: Datový analytik, datový specialista (m/ž) at Masarykův onkologický ústav
+2025-01-16 18:14:31,129 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000470162/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:32,571 - WARNING - Could not find job description for Senior specialista/ tka finanční infrastruktury - Praha at Banka CREDITAS a.s.
+2025-01-16 18:14:32,571 - INFO - Scraped job 145: Senior specialista/ tka finanční infrastruktury - Praha at Banka CREDITAS a.s.
+2025-01-16 18:14:32,571 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000470133/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:34,034 - WARNING - Could not find job description for Specialista/ tka finanční infrastruktury - Praha at Banka CREDITAS a.s.
+2025-01-16 18:14:34,034 - INFO - Scraped job 146: Specialista/ tka finanční infrastruktury - Praha at Banka CREDITAS a.s.
+2025-01-16 18:14:34,035 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000469977/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:35,558 - WARNING - Could not find job description for IT aplikační správce / správkyně at ČEZ, a. s.
+2025-01-16 18:14:35,558 - INFO - Scraped job 147: IT aplikační správce / správkyně at ČEZ, a. s.
+2025-01-16 18:14:35,558 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000465203/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:38,359 - WARNING - Could not find job description for Junior Investment Banking P&L Specialist at Komerční banka, a.s.
+2025-01-16 18:14:38,360 - INFO - Scraped job 148: Junior Investment Banking P&L Specialist at Komerční banka, a.s.
+2025-01-16 18:14:38,360 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000469712/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:38,991 - INFO - Scraped job 149: Analytik obchodu s energetickými komoditami at UCED s.r.o.
+2025-01-16 18:14:38,991 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466980/?searchId=1f95ef1e-5d6a-4a6f-b3f7-1e8858452537&rps=233
+2025-01-16 18:14:41,046 - WARNING - Could not find job description for Senior Consultant DWH, Business intelligence at Skupina E.ON
+2025-01-16 18:14:41,046 - INFO - Scraped job 150: Senior Consultant DWH, Business intelligence at Skupina E.ON
+2025-01-16 18:14:43,049 - INFO - Scraping page 6 of 11...
+2025-01-16 18:14:43,050 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=6
+2025-01-16 18:14:44,360 - INFO - Found 30 job items on page 6
+2025-01-16 18:14:44,360 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000453709/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:14:45,240 - INFO - Scraped job 151: Programátor/ka aplikační at CMS s.r.o.
+2025-01-16 18:14:45,240 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000329437/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:14:46,531 - WARNING - Could not find job description for Internship – Řízení kreditního rizika at EY
+2025-01-16 18:14:46,531 - INFO - Scraped job 152: Internship – Řízení kreditního rizika at EY
+2025-01-16 18:14:46,531 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000329433/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:14:48,276 - WARNING - Could not find job description for Konzultant/vývojář modelů – Řízení kreditního rizika at EY
+2025-01-16 18:14:48,276 - INFO - Scraped job 153: Konzultant/vývojář modelů – Řízení kreditního rizika at EY
+2025-01-16 18:14:48,276 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000391852/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:14:49,902 - WARNING - Could not find job description for BI Analyst – Voyo at TV Nova s.r.o.
+2025-01-16 18:14:49,902 - INFO - Scraped job 154: BI Analyst – Voyo at TV Nova s.r.o.
+2025-01-16 18:14:49,902 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000417438/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:14:51,205 - INFO - Scraped job 155: Cloud Native Developer (Golang, CI/CD) at ESET Research Czech Republic s.r.o.
+2025-01-16 18:14:51,206 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000468830/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:14:52,487 - INFO - Scraped job 156: DevOps Platform Engineer - #hybrid #noveprojekty at Betsys, s.r.o.
+2025-01-16 18:14:52,487 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000468294/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:14:53,401 - INFO - Scraped job 157: QA engineer / tester at OZOBOT s.r.o.
+2025-01-16 18:14:53,402 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000270092/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:14:54,522 - INFO - Scraped job 158: VÝVOJÁŘ FRONTENDU - REACT - komplexní SW řešení at Seyfor, a. s.
+2025-01-16 18:14:54,524 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000323433/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:14:55,427 - INFO - Scraped job 159: Systémový/technický specialista  - junior/senior - pro HRIS Vema at Seyfor, a. s.
+2025-01-16 18:14:55,427 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000468697/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:14:56,533 - INFO - Scraped job 160: Analytik/analytička se zaměřením na dohled nad úvěrovým rizikem at ČESKÁ NÁRODNÍ BANKA
+2025-01-16 18:14:56,533 - INFO - Fetching URL: https://www.jobs.cz/rpd/1637764092/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:14:59,472 - WARNING - Could not find job description for DevOps Engineer at Komerční banka, a.s.
+2025-01-16 18:14:59,473 - INFO - Scraped job 161: DevOps Engineer at Komerční banka, a.s.
+2025-01-16 18:14:59,473 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000459171/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:00,580 - INFO - Scraped job 162: Junior Consultant - na křižovatce IT a Business Consultingu at ADASTRA, s.r.o.
+2025-01-16 18:15:00,580 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000434449/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:01,351 - INFO - Scraped job 163: Full-Stack Developer (Java & React) at PAYMONT, UAB
+2025-01-16 18:15:01,351 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000420006/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:03,191 - WARNING - Could not find job description for DevOps Specialist Administrátor at CS SOFT a. s.
+2025-01-16 18:15:03,192 - INFO - Scraped job 164: DevOps Specialist Administrátor at CS SOFT a. s.
+2025-01-16 18:15:03,192 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000419990/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:04,825 - WARNING - Could not find job description for Tester Specialist at CS SOFT a. s.
+2025-01-16 18:15:04,825 - INFO - Scraped job 165: Tester Specialist at CS SOFT a. s.
+2025-01-16 18:15:04,825 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000197913/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:05,896 - INFO - Scraped job 166: Application Security Engineer at Seznam.cz, a.s.
+2025-01-16 18:15:05,896 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000458483/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:06,617 - INFO - Scraped job 167: IT analytik at eDO finance, a.s.
+2025-01-16 18:15:06,617 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000458099/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:07,297 - INFO - Scraped job 168: SYSTÉMOVÝ ADMINISTRÁTOR(-KA) / SPRÁVCE HW INFRASTRUKTURY at Moravská zemská knihovna v Brně
+2025-01-16 18:15:07,297 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000315137/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:08,498 - INFO - Scraped job 169: Linux správce (m/ž) at Operátor ICT, a. s.
+2025-01-16 18:15:08,498 - INFO - Fetching URL: https://www.jobs.cz/rpd/1625945130/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:09,238 - INFO - Scraped job 170: Analytik kybernetické bezpečnosti senior (M/Ž) at Státní pokladna Centrum sdílených služeb, s. p.
+2025-01-16 18:15:09,238 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000451941/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:10,846 - WARNING - Could not find job description for Junior Network Support Engineer - Praha at ANECT a.s.
+2025-01-16 18:15:10,846 - INFO - Scraped job 171: Junior Network Support Engineer - Praha at ANECT a.s.
+2025-01-16 18:15:10,846 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000328397/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:11,766 - INFO - Scraped job 172: DS/ML/AI Lead Engineer at Profinit EU, s.r.o.
+2025-01-16 18:15:11,767 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000467273/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:13,335 - WARNING - Could not find job description for Automation Engineer (m/f) at T-Mobile Czech Republic a.s.
+2025-01-16 18:15:13,336 - INFO - Scraped job 173: Automation Engineer (m/f) at T-Mobile Czech Republic a.s.
+2025-01-16 18:15:13,336 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000467269/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:14,896 - WARNING - Could not find job description for Operations Engineer (m/f) at T-Mobile Czech Republic a.s.
+2025-01-16 18:15:14,896 - INFO - Scraped job 174: Operations Engineer (m/f) at T-Mobile Czech Republic a.s.
+2025-01-16 18:15:14,896 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000467267/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:16,342 - WARNING - Could not find job description for Telco Cloud Engineer (m/f) at T-Mobile Czech Republic a.s.
+2025-01-16 18:15:16,342 - INFO - Scraped job 175: Telco Cloud Engineer (m/f) at T-Mobile Czech Republic a.s.
+2025-01-16 18:15:16,342 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000424653/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:18,351 - WARNING - Could not find job description for Data Analyst at UNILEVER ČR, spol. s r.o.
+2025-01-16 18:15:18,351 - INFO - Scraped job 176: Data Analyst at UNILEVER ČR, spol. s r.o.
+2025-01-16 18:15:18,351 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000460894/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:19,192 - INFO - Scraped job 177: CATASTROPHE MODELLING ANALYST at Guy Carpenter & Company GmbH, odštěpný závod
+2025-01-16 18:15:19,192 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000372357/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:21,141 - WARNING - Could not find job description for Marketing Data Specialist - firemní klienti at Česká spořitelna, a.s.
+2025-01-16 18:15:21,142 - INFO - Scraped job 178: Marketing Data Specialist - firemní klienti at Česká spořitelna, a.s.
+2025-01-16 18:15:21,142 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000457285/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:22,029 - INFO - Scraped job 179: IT podpora a analýza prodeje nemovitostí 🌐 at VIAGEM a.s.
+2025-01-16 18:15:22,029 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000446002/?searchId=f51d0cb7-0bf6-46bd-8be8-59b8426e3041&rps=233
+2025-01-16 18:15:24,025 - WARNING - Could not find job description for Software Manager - Engineering at Thermo Fisher Scientific
+2025-01-16 18:15:24,025 - INFO - Scraped job 180: Software Manager - Engineering at Thermo Fisher Scientific
+2025-01-16 18:15:26,028 - INFO - Scraping page 7 of 11...
+2025-01-16 18:15:26,029 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=7
+2025-01-16 18:15:27,662 - INFO - Found 30 job items on page 7
+2025-01-16 18:15:27,662 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000418358/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:29,039 - WARNING - Could not find job description for IT Application Support Specialist (L2/L3) at TV Nova s.r.o.
+2025-01-16 18:15:29,040 - INFO - Scraped job 181: IT Application Support Specialist (L2/L3) at TV Nova s.r.o.
+2025-01-16 18:15:29,040 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466711/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:29,979 - INFO - Scraped job 182: SPRÁVCE ICT at ÚSTAV ZDRAVOTNICKÝCH INFORMACÍ A STATISTIKY ČR
+2025-01-16 18:15:29,979 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000445355/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:31,498 - WARNING - Could not find job description for IT Test Analytik/Manager at PPF banka a.s.
+2025-01-16 18:15:31,498 - INFO - Scraped job 183: IT Test Analytik/Manager at PPF banka a.s.
+2025-01-16 18:15:31,498 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466661/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:32,298 - INFO - Scraped job 184: ESG/procesní konzultant at Gatum Group s.r.o.
+2025-01-16 18:15:32,298 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466659/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:32,989 - INFO - Scraped job 185: Konzultant ve strategickém poradenství at Gatum Group s.r.o.
+2025-01-16 18:15:32,989 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466613/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:33,956 - INFO - Scraped job 186: Data Engineer at PricewaterhouseCoopers Česká republika, s.r.o.
+2025-01-16 18:15:33,956 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466482/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:35,553 - WARNING - Could not find job description for Service Owner do týmu Rekonciliace at Česká spořitelna, a.s.
+2025-01-16 18:15:35,553 - INFO - Scraped job 187: Service Owner do týmu Rekonciliace at Česká spořitelna, a.s.
+2025-01-16 18:15:35,553 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466483/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:37,431 - WARNING - Could not find job description for LiDAR System Inženýr at VALEO PRAHA
+2025-01-16 18:15:37,431 - INFO - Scraped job 188: LiDAR System Inženýr at VALEO PRAHA
+2025-01-16 18:15:37,432 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466478/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:39,034 - WARNING - Could not find job description for LiDAR System Engineer at VALEO PRAHA
+2025-01-16 18:15:39,035 - INFO - Scraped job 189: LiDAR System Engineer at VALEO PRAHA
+2025-01-16 18:15:39,035 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000179662/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:40,965 - WARNING - Could not find job description for LiDAR System Inženýr at VALEO PRAHA
+2025-01-16 18:15:40,965 - INFO - Scraped job 190: LiDAR System Inženýr at VALEO PRAHA
+2025-01-16 18:15:40,965 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466361/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:41,719 - INFO - Scraped job 191: Data Platform Engineer at GIT Consult Czech s.r.o.
+2025-01-16 18:15:41,719 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000466330/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:43,642 - WARNING - Could not find job description for AI INTERN IN ELEVION GROUP at ČEZ, a. s.
+2025-01-16 18:15:43,642 - INFO - Scraped job 192: AI INTERN IN ELEVION GROUP at ČEZ, a. s.
+2025-01-16 18:15:43,642 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000439442/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:44,544 - INFO - Scraped job 193: Data Analyst/Scientist at PricewaterhouseCoopers Česká republika, s.r.o.
+2025-01-16 18:15:44,545 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000412264/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:45,833 - WARNING - Could not find job description for Datový analytik / eDiscovery ve Forenzních službách at EY
+2025-01-16 18:15:45,834 - INFO - Scraped job 194: Datový analytik / eDiscovery ve Forenzních službách at EY
+2025-01-16 18:15:45,834 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000465912/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:47,444 - WARNING - Could not find job description for IT Operations Specialist at MONET+,a.s.
+2025-01-16 18:15:47,445 - INFO - Scraped job 195: IT Operations Specialist at MONET+,a.s.
+2025-01-16 18:15:47,445 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000465890/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:48,987 - WARNING - Could not find job description for IT Application Specialist at MONET+,a.s.
+2025-01-16 18:15:48,987 - INFO - Scraped job 196: IT Application Specialist at MONET+,a.s.
+2025-01-16 18:15:48,987 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000424647/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:50,974 - WARNING - Could not find job description for Data and Simulation Specialist at Mercedes-Benz Česká republika s.r.o.
+2025-01-16 18:15:50,974 - INFO - Scraped job 197: Data and Simulation Specialist at Mercedes-Benz Česká republika s.r.o.
+2025-01-16 18:15:50,975 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000428957/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:51,835 - INFO - Scraped job 198: Electronic Systems Engineer at Terma Technologies Czech Republic s.r.o.
+2025-01-16 18:15:51,835 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000451297/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:53,729 - WARNING - Could not find job description for Programátor algoritmického obchodování at PROFI CREDIT Czech, a.s.
+2025-01-16 18:15:53,729 - INFO - Scraped job 199: Programátor algoritmického obchodování at PROFI CREDIT Czech, a.s.
+2025-01-16 18:15:53,729 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000382628/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:54,818 - INFO - Scraped job 200: Vývojový pracovník at Meopta s.r.o.
+2025-01-16 18:15:54,818 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000456000/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:55,504 - INFO - Scraped job 201: Inženýrské simulace / Engineering Simulations at CFD support s.r.o.
+2025-01-16 18:15:55,505 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000392348/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:56,773 - WARNING - Could not find job description for Finanční analytik/čka ALM - Praha at Banka CREDITAS a.s.
+2025-01-16 18:15:56,773 - INFO - Scraped job 202: Finanční analytik/čka ALM - Praha at Banka CREDITAS a.s.
+2025-01-16 18:15:56,773 - INFO - Fetching URL: https://www.jobs.cz/rpd/1581216610/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:58,001 - WARNING - Could not find job description for Cyber security senior - Content Engineer SIEM/SOAR (m/f) at T-Mobile Czech Republic a.s.
+2025-01-16 18:15:58,001 - INFO - Scraped job 203: Cyber security senior - Content Engineer SIEM/SOAR (m/f) at T-Mobile Czech Republic a.s.
+2025-01-16 18:15:58,001 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000431516/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:58,850 - INFO - Scraped job 204: Firmware Developer at Vrgineers, Inc., odštěpný závod
+2025-01-16 18:15:58,850 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000145787/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:15:59,985 - INFO - Scraped job 205: Seniorní datový analytik / datová analytička se zájmem o data engeneering at Operátor ICT, a. s.
+2025-01-16 18:15:59,985 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000404915/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:16:00,682 - INFO - Scraped job 206: PLC specialista - Control System Engineer at Nemak Czech Republic s.r.o.
+2025-01-16 18:16:00,682 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000464768/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:16:02,394 - WARNING - Could not find job description for C/C++ Vývojář pro autonomní řízení at PPF a.s.
+2025-01-16 18:16:02,394 - INFO - Scraped job 207: C/C++ Vývojář pro autonomní řízení at PPF a.s.
+2025-01-16 18:16:02,394 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000455684/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:16:03,191 - INFO - Scraped job 208: Security Engineer at Kentico software s.r.o.
+2025-01-16 18:16:03,191 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000464915/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:16:05,561 - WARNING - Could not find job description for IT Datový analytik senior at ČEZ, a. s.
+2025-01-16 18:16:05,561 - INFO - Scraped job 209: IT Datový analytik senior at ČEZ, a. s.
+2025-01-16 18:16:05,561 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000450854/?searchId=ee3ce7d4-6776-4a19-93a0-bf37e13d7b79&rps=233
+2025-01-16 18:16:06,399 - INFO - Scraped job 210: Procesní inženýr pro chemický průmysl at Kienbaum und Partner GmbH
+2025-01-16 18:16:08,404 - INFO - Scraping page 8 of 11...
+2025-01-16 18:16:08,405 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=8
+2025-01-16 18:16:10,132 - INFO - Found 30 job items on page 8
+2025-01-16 18:16:10,132 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000450825/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:11,516 - WARNING - Could not find job description for Data Scientist for Intraday Power Trading at Powertica Commodities AG, odštěpný závod
+2025-01-16 18:16:11,516 - INFO - Scraped job 211: Data Scientist for Intraday Power Trading at Powertica Commodities AG, odštěpný závod
+2025-01-16 18:16:11,516 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000464661/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:12,295 - INFO - Scraped job 212: Product Manager at Prusa Research a.s.
+2025-01-16 18:16:12,296 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000450718/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:12,996 - INFO - Scraped job 213: Junior datový analytik – Power BI at Česká informační agentura životního prostředí
+2025-01-16 18:16:12,997 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000464037/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:14,084 - INFO - Scraped job 214: Research And Development SW Engineer at BTL Medical
+2025-01-16 18:16:14,084 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000449594/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:15,791 - WARNING - Could not find job description for Industrial Digitization Engineer at VALEO RAKOVNÍK 2
+2025-01-16 18:16:15,791 - INFO - Scraped job 215: Industrial Digitization Engineer at VALEO RAKOVNÍK 2
+2025-01-16 18:16:15,791 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000463977/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:16,614 - INFO - Scraped job 216: Tester mobilních a webových aplikací at Antal International s.r.o.
+2025-01-16 18:16:16,614 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000450294/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:17,413 - INFO - Scraped job 217: Programátor Delphi at STARMON s.r.o.
+2025-01-16 18:16:17,414 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000394708/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:19,189 - WARNING - Could not find job description for Senior Data Analyst at Skupina E.ON
+2025-01-16 18:16:19,190 - INFO - Scraped job 218: Senior Data Analyst at Skupina E.ON
+2025-01-16 18:16:19,190 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000449518/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:20,324 - INFO - Scraped job 219: Application Integration Developer - SalesForce at IMI International s.r.o.
+2025-01-16 18:16:20,325 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000463439/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:22,081 - WARNING - Could not find job description for Senior DevOps Engineer at DHL Information Services (Europe) s.r.o.
+2025-01-16 18:16:22,081 - INFO - Scraped job 220: Senior DevOps Engineer at DHL Information Services (Europe) s.r.o.
+2025-01-16 18:16:22,082 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000463424/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:23,503 - WARNING - Could not find job description for DevOps Engineer at DHL Information Services (Europe) s.r.o.
+2025-01-16 18:16:23,503 - INFO - Scraped job 221: DevOps Engineer at DHL Information Services (Europe) s.r.o.
+2025-01-16 18:16:23,504 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000463413/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:24,591 - INFO - Scraped job 222: DevOps Engineer pro Web crawlera at Seznam.cz, a.s.
+2025-01-16 18:16:24,592 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000422975/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:25,353 - INFO - Scraped job 223: Vývojář ERP HELIOS at Gatema IT a.s
+2025-01-16 18:16:25,353 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000449697/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:26,964 - WARNING - Could not find job description for Senior Data Engineer/Database Specialist at Powertica Commodities AG, odštěpný závod
+2025-01-16 18:16:26,964 - INFO - Scraped job 224: Senior Data Engineer/Database Specialist at Powertica Commodities AG, odštěpný závod
+2025-01-16 18:16:26,964 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000462693/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:28,918 - WARNING - Could not find job description for Specialista kybernetické bezpečnosti L2/L3 (m/ž) at O2 Czech Republic a.s.
+2025-01-16 18:16:28,918 - INFO - Scraped job 225: Specialista kybernetické bezpečnosti L2/L3 (m/ž) at O2 Czech Republic a.s.
+2025-01-16 18:16:28,918 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000382345/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:29,768 - INFO - Scraped job 226: Product Admin/Support pro interní projekty at Publicis Groupe
+2025-01-16 18:16:29,768 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000462379/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:30,561 - INFO - Scraped job 227: IT Support at Deckard & Penfield s.r.o.
+2025-01-16 18:16:30,561 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000157449/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:31,375 - INFO - Scraped job 228: Oracle administrator at Medical Systems a.s.
+2025-01-16 18:16:31,375 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000435005/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:33,207 - WARNING - Could not find job description for SW engineer_developer_Automatizace at Česká spořitelna, a.s.
+2025-01-16 18:16:33,207 - INFO - Scraped job 229: SW engineer_developer_Automatizace at Česká spořitelna, a.s.
+2025-01-16 18:16:33,207 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000321507/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:34,482 - INFO - Scraped job 230: Stážista ve výrobním oddělení at Philip Morris ČR
+2025-01-16 18:16:34,482 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000462046/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:36,501 - WARNING - Could not find job description for Validation and Verification Engineer / Test Engineer – Black Boxes at Honeywell, spol. s r.o.
+2025-01-16 18:16:36,501 - INFO - Scraped job 231: Validation and Verification Engineer / Test Engineer – Black Boxes at Honeywell, spol. s r.o.
+2025-01-16 18:16:36,501 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000447633/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:37,327 - INFO - Scraped job 232: SW TEAMLEADER at ERA a.s.
+2025-01-16 18:16:37,327 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000461937/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:39,220 - WARNING - Could not find job description for Senior analytik/čka pro validaci modelů at MONETA Money Bank, a.s.
+2025-01-16 18:16:39,221 - INFO - Scraped job 233: Senior analytik/čka pro validaci modelů at MONETA Money Bank, a.s.
+2025-01-16 18:16:39,221 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000461683/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:41,135 - WARNING - Could not find job description for FP&A Analytik/čka - senior at ORLEN Unipetrol RPA, s.r.o.
+2025-01-16 18:16:41,136 - INFO - Scraped job 234: FP&A Analytik/čka - senior at ORLEN Unipetrol RPA, s.r.o.
+2025-01-16 18:16:41,136 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000441396/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:42,454 - INFO - Scraped job 235: Data Analyst in Forensic Technology Services team at PricewaterhouseCoopers Česká republika, s.r.o.
+2025-01-16 18:16:42,454 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000461663/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:43,404 - INFO - Scraped job 236: Java Developer pro Web crawlera at Seznam.cz, a.s.
+2025-01-16 18:16:43,404 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000449025/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:44,172 - INFO - Scraped job 237: Vědecký pracovník výzkumu a vývoje – Radioelektronika at Ústav přístrojové techniky AV ČR, v.v.i.
+2025-01-16 18:16:44,173 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000461332/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:45,832 - WARNING - Could not find job description for BI Analyst – Voyo – externí spolupráce at TV Nova s.r.o.
+2025-01-16 18:16:45,832 - INFO - Scraped job 238: BI Analyst – Voyo – externí spolupráce at TV Nova s.r.o.
+2025-01-16 18:16:45,832 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000429058/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:47,447 - WARNING - Could not find job description for Data Scientist se zaměřením na Anti-Fraud a AML at MONETA Money Bank, a.s.
+2025-01-16 18:16:47,447 - INFO - Scraped job 239: Data Scientist se zaměřením na Anti-Fraud a AML at MONETA Money Bank, a.s.
+2025-01-16 18:16:47,447 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000448834/?searchId=424b9aba-fccc-430c-8196-e73ffd7a559a&rps=233
+2025-01-16 18:16:48,163 - INFO - Scraped job 240: Datový inženýr at Cross Masters s.r.o.
+2025-01-16 18:16:50,168 - INFO - Scraping page 9 of 11...
+2025-01-16 18:16:50,169 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=9
+2025-01-16 18:16:51,922 - INFO - Found 30 job items on page 9
+2025-01-16 18:16:51,922 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000460625/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:16:52,822 - INFO - Scraped job 241: Manuální tester do oblasti automotive s praxí (45-65.000 Kč) at Jobs Contact Personal, s.r.o.
+2025-01-16 18:16:52,822 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000460415/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:16:53,798 - INFO - Scraped job 242: Junior Linux Administrátor se znalostí LAN/WAN (50-65.000 Kč) at Jobs Contact Personal, s.r.o.
+2025-01-16 18:16:53,798 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000460219/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:16:55,492 - WARNING - Could not find job description for Business / Datový analytik – Associate Consultant (Brno) at KPMG Česká republika, s.r.o.
+2025-01-16 18:16:55,492 - INFO - Scraped job 243: Business / Datový analytik – Associate Consultant (Brno) at KPMG Česká republika, s.r.o.
+2025-01-16 18:16:55,492 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000348061/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:16:57,300 - WARNING - Could not find job description for Java Developer – Counterparty Risk Management at COMMERZBANK Aktiengesellschaft, pobočka Praha
+2025-01-16 18:16:57,301 - INFO - Scraped job 244: Java Developer – Counterparty Risk Management at COMMERZBANK Aktiengesellschaft, pobočka Praha
+2025-01-16 18:16:57,301 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000404348/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:16:59,725 - WARNING - Could not find job description for Chapter Leader - Advanced Data Analytics at Komerční banka, a.s.
+2025-01-16 18:16:59,725 - INFO - Scraped job 245: Chapter Leader - Advanced Data Analytics at Komerční banka, a.s.
+2025-01-16 18:16:59,725 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000459786/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:01,283 - WARNING - Could not find job description for Business / Datový analytik – Associate Consultant at KPMG Česká republika, s.r.o.
+2025-01-16 18:17:01,283 - INFO - Scraped job 246: Business / Datový analytik – Associate Consultant at KPMG Česká republika, s.r.o.
+2025-01-16 18:17:01,283 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000459473/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:02,508 - INFO - Scraped job 247: Architekt kyberbezpečnosti junior (m/ž) at Masarykova univerzita
+2025-01-16 18:17:02,509 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000226544/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:04,283 - WARNING - Could not find job description for IT SECURITY ANALYST III - DATABASE at Tesco Stores ČR a.s. - Centrála
+2025-01-16 18:17:04,284 - INFO - Scraped job 248: IT SECURITY ANALYST III - DATABASE at Tesco Stores ČR a.s. - Centrála
+2025-01-16 18:17:04,284 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000279757/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:05,214 - INFO - Scraped job 249: Software and Linux Systems Engineer at onsemi
+2025-01-16 18:17:05,214 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000458372/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:06,853 - WARNING - Could not find job description for Java Vývojář/ka pro Cyber Security platformu at Siemens Mobility, s.r.o.
+2025-01-16 18:17:06,853 - INFO - Scraped job 250: Java Vývojář/ka pro Cyber Security platformu at Siemens Mobility, s.r.o.
+2025-01-16 18:17:06,853 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000458137/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:08,335 - WARNING - Could not find job description for Databázový administrátor pro datový sklad (m/ž) at O2 Czech Republic a.s.
+2025-01-16 18:17:08,335 - INFO - Scraped job 251: Databázový administrátor pro datový sklad (m/ž) at O2 Czech Republic a.s.
+2025-01-16 18:17:08,335 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000458118/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:10,386 - WARNING - Could not find job description for Team Leader databázových administrátorů pro datový sklad (m/ž) at O2 Czech Republic a.s.
+2025-01-16 18:17:10,386 - INFO - Scraped job 252: Team Leader databázových administrátorů pro datový sklad (m/ž) at O2 Czech Republic a.s.
+2025-01-16 18:17:10,386 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000442000/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:12,240 - WARNING - Could not find job description for Senior Data Analyst at Wunderman Thompson
+2025-01-16 18:17:12,240 - INFO - Scraped job 253: Senior Data Analyst at Wunderman Thompson
+2025-01-16 18:17:12,240 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000457828/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:14,027 - WARNING - Could not find job description for SW Tester/ka řídících systémů kolejových vozidel at Siemens Mobility, s.r.o.
+2025-01-16 18:17:14,027 - INFO - Scraped job 254: SW Tester/ka řídících systémů kolejových vozidel at Siemens Mobility, s.r.o.
+2025-01-16 18:17:14,027 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000404701/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:16,073 - WARNING - Could not find job description for Senior DWH Specialist at Mattoni 1873 a.s.
+2025-01-16 18:17:16,073 - INFO - Scraped job 255: Senior DWH Specialist at Mattoni 1873 a.s.
+2025-01-16 18:17:16,074 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000457022/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:18,196 - WARNING - Could not find job description for Master Data Analyst at Hays Czech Republic, s.r.o.
+2025-01-16 18:17:18,197 - INFO - Scraped job 256: Master Data Analyst at Hays Czech Republic, s.r.o.
+2025-01-16 18:17:18,197 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000457573/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:19,432 - INFO - Scraped job 257: Platfort Ops Engineer at TRINITY BANK a.s.
+2025-01-16 18:17:19,432 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000415501/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:20,129 - INFO - Scraped job 258: Infrastructure Engineer – Monitoring & Logging at mediaport solutions s.r.o.
+2025-01-16 18:17:20,129 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000389561/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:20,821 - INFO - Scraped job 259: Senior DWH/BI Specialist at mediaport solutions s.r.o.
+2025-01-16 18:17:20,821 - INFO - Fetching URL: https://www.jobs.cz/rpd/1637395056/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:22,455 - WARNING - Could not find job description for Cyber Security – Consultant at KPMG Česká republika, s.r.o.
+2025-01-16 18:17:22,455 - INFO - Scraped job 260: Cyber Security – Consultant at KPMG Česká republika, s.r.o.
+2025-01-16 18:17:22,455 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000289750/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:23,831 - WARNING - Could not find job description for Specialista simulace akustiky vozů (m/ž) at ŠKODA AUTO a.s.
+2025-01-16 18:17:23,831 - INFO - Scraped job 261: Specialista simulace akustiky vozů (m/ž) at ŠKODA AUTO a.s.
+2025-01-16 18:17:23,832 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000439333/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:25,423 - WARNING - Could not find job description for Specialista vývoje simulace a virt. tech. akustiky CMP21D (m/ž) at ŠKODA AUTO a.s.
+2025-01-16 18:17:25,423 - INFO - Scraped job 262: Specialista vývoje simulace a virt. tech. akustiky CMP21D (m/ž) at ŠKODA AUTO a.s.
+2025-01-16 18:17:25,423 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000432024/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:26,857 - WARNING - Could not find job description for Vývojový inženýr SiL pro SUMS Bugfixing/DLCM (m/ž) at ŠKODA AUTO a.s.
+2025-01-16 18:17:26,857 - INFO - Scraped job 263: Vývojový inženýr SiL pro SUMS Bugfixing/DLCM (m/ž) at ŠKODA AUTO a.s.
+2025-01-16 18:17:26,857 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000456600/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:28,668 - WARNING - Could not find job description for Market Analyst, Trading (junior/senior) at ČEZ, a. s.
+2025-01-16 18:17:28,668 - INFO - Scraped job 264: Market Analyst, Trading (junior/senior) at ČEZ, a. s.
+2025-01-16 18:17:28,668 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000456591/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:30,148 - WARNING - Could not find job description for Quantitative Analyst, Trading, CEZ a.s. at ČEZ, a. s.
+2025-01-16 18:17:30,148 - INFO - Scraped job 265: Quantitative Analyst, Trading, CEZ a.s. at ČEZ, a. s.
+2025-01-16 18:17:30,148 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000415064/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:30,777 - INFO - Scraped job 266: Senior Machine Learning Engineer at FLEETCOR / CCS Česká společnost pro platební karty s.r.o.
+2025-01-16 18:17:30,777 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000456147/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:32,193 - WARNING - Could not find job description for IT TESTER at Raiffeisenbank a.s.
+2025-01-16 18:17:32,193 - INFO - Scraped job 267: IT TESTER at Raiffeisenbank a.s.
+2025-01-16 18:17:32,193 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000432431/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:33,812 - WARNING - Could not find job description for Hlavní architekt mobil. aplikace MyŠkoda (m/ž) at ŠKODA AUTO a.s.
+2025-01-16 18:17:33,812 - INFO - Scraped job 268: Hlavní architekt mobil. aplikace MyŠkoda (m/ž) at ŠKODA AUTO a.s.
+2025-01-16 18:17:33,813 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000437722/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:34,719 - INFO - Scraped job 269: Software Engineer Junior at onsemi
+2025-01-16 18:17:34,719 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000455247/?searchId=9eb461af-1c0d-4219-a09d-65e545dd255f&rps=233
+2025-01-16 18:17:36,464 - WARNING - Could not find job description for Data Scientist at SPORTISIMO s.r.o.
+2025-01-16 18:17:36,464 - INFO - Scraped job 270: Data Scientist at SPORTISIMO s.r.o.
+2025-01-16 18:17:38,469 - INFO - Scraping page 10 of 11...
+2025-01-16 18:17:38,470 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=10
+2025-01-16 18:17:40,291 - INFO - Found 30 job items on page 10
+2025-01-16 18:17:40,292 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000437262/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:17:41,624 - INFO - Scraped job 271: Principal Business Analyst at W.A.G. payment solutions, a.s.
+2025-01-16 18:17:41,624 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000455046/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:17:42,558 - INFO - Scraped job 272: Databricks Solution Architekt at Profinit EU, s.r.o.
+2025-01-16 18:17:42,558 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000454897/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:17:44,050 - WARNING - Could not find job description for ⭕ Pharmaceutical Business Data Support - Praha at ProfesKontakt, s.r.o.
+2025-01-16 18:17:44,050 - INFO - Scraped job 273: ⭕ Pharmaceutical Business Data Support - Praha at ProfesKontakt, s.r.o.
+2025-01-16 18:17:44,050 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000454331/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:17:45,087 - INFO - Scraped job 274: Data Science Team Lead at PricewaterhouseCoopers Česká republika, s.r.o.
+2025-01-16 18:17:45,087 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000155488/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:17:46,876 - WARNING - Could not find job description for Analytik | Analytička SOC @NAKIT at NAKIT, s. p.
+2025-01-16 18:17:46,876 - INFO - Scraped job 275: Analytik | Analytička SOC @NAKIT at NAKIT, s. p.
+2025-01-16 18:17:46,876 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000421099/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:17:48,690 - WARNING - Could not find job description for Process Consultant - Bratislava at Manpower IT
+2025-01-16 18:17:48,691 - INFO - Scraped job 276: Process Consultant - Bratislava at Manpower IT
+2025-01-16 18:17:48,691 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000397115/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:17:50,009 - WARNING - Could not find job description for Medior/Senior Automation Tester at Manpower IT
+2025-01-16 18:17:50,009 - INFO - Scraped job 277: Medior/Senior Automation Tester at Manpower IT
+2025-01-16 18:17:50,009 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000436910/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:17:51,592 - WARNING - Could not find job description for Junior Functional Analyst, Prague at KBC Global Services NV
+2025-01-16 18:17:51,592 - INFO - Scraped job 278: Junior Functional Analyst, Prague at KBC Global Services NV
+2025-01-16 18:17:51,592 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000454737/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:17:53,205 - WARNING - Could not find job description for “QUANTITATIVE TRADER” / “DATA SCIENCE TRADER”  - INTRADAY TRADING at ČEZ, a. s.
+2025-01-16 18:17:53,205 - INFO - Scraped job 279: “QUANTITATIVE TRADER” / “DATA SCIENCE TRADER”  - INTRADAY TRADING at ČEZ, a. s.
+2025-01-16 18:17:53,205 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000336645/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:17:54,496 - WARNING - Could not find job description for DevOps Manager in Daily Banking at COMMERZBANK Aktiengesellschaft, pobočka Praha
+2025-01-16 18:17:54,496 - INFO - Scraped job 280: DevOps Manager in Daily Banking at COMMERZBANK Aktiengesellschaft, pobočka Praha
+2025-01-16 18:17:54,497 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000404451/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:17:55,449 - INFO - Scraped job 281: Audit & Release IP Software Engineer (Junior) at onsemi
+2025-01-16 18:17:55,449 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000378037/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:17:57,587 - WARNING - Could not find job description for IT SECURITY ANALYST III - AD at Tesco Stores ČR a.s. - Centrála
+2025-01-16 18:17:57,587 - INFO - Scraped job 282: IT SECURITY ANALYST III - AD at Tesco Stores ČR a.s. - Centrála
+2025-01-16 18:17:57,587 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000453527/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:17:59,129 - WARNING - Could not find job description for Datový analytik / analytička at ČEPS, a.s.
+2025-01-16 18:17:59,130 - INFO - Scraped job 283: Datový analytik / analytička at ČEPS, a.s.
+2025-01-16 18:17:59,130 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000403252/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:00,097 - INFO - Scraped job 284: Data Engineer at Profinit EU, s.r.o.
+2025-01-16 18:18:00,097 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000452710/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:01,593 - WARNING - Could not find job description for Test Manager for Routing and Device Management at DHL Information Services (Europe) s.r.o.
+2025-01-16 18:18:01,594 - INFO - Scraped job 285: Test Manager for Routing and Device Management at DHL Information Services (Europe) s.r.o.
+2025-01-16 18:18:01,594 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000452587/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:02,351 - INFO - Scraped job 286: TESTER - náběh nových výrobků at Livio consulting s.r.o.
+2025-01-16 18:18:02,352 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000394015/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:03,415 - WARNING - Could not find job description for Správce SW infrastruktury - junior at ČEPS, a.s.
+2025-01-16 18:18:03,415 - INFO - Scraped job 287: Správce SW infrastruktury - junior at ČEPS, a.s.
+2025-01-16 18:18:03,415 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000427465/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:04,978 - WARNING - Could not find job description for Data Engineer/Scientist  KYC cluster at COMMERZBANK Aktiengesellschaft, pobočka Praha
+2025-01-16 18:18:04,978 - INFO - Scraped job 288: Data Engineer/Scientist  KYC cluster at COMMERZBANK Aktiengesellschaft, pobočka Praha
+2025-01-16 18:18:04,978 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000397969/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:06,942 - WARNING - Could not find job description for IT SECURITY ANALYST III - Linux at Tesco Stores ČR a.s. - Centrála
+2025-01-16 18:18:06,942 - INFO - Scraped job 289: IT SECURITY ANALYST III - Linux at Tesco Stores ČR a.s. - Centrála
+2025-01-16 18:18:06,943 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000364096/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:08,442 - WARNING - Could not find job description for Embedded Linux Developer at ZF Engineering Plzeň
+2025-01-16 18:18:08,442 - INFO - Scraped job 290: Embedded Linux Developer at ZF Engineering Plzeň
+2025-01-16 18:18:08,442 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000276048/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:10,235 - WARNING - Could not find job description for Cyber Security Engineer at Thermo Fisher Scientific
+2025-01-16 18:18:10,235 - INFO - Scraped job 291: Cyber Security Engineer at Thermo Fisher Scientific
+2025-01-16 18:18:10,235 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000329456/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:11,933 - WARNING - Could not find job description for Senior konzultant – Řízení tržního rizika at EY
+2025-01-16 18:18:11,934 - INFO - Scraped job 292: Senior konzultant – Řízení tržního rizika at EY
+2025-01-16 18:18:11,934 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000329442/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:13,513 - WARNING - Could not find job description for Senior konzultant – Řízení kreditního rizika at EY
+2025-01-16 18:18:13,513 - INFO - Scraped job 293: Senior konzultant – Řízení kreditního rizika at EY
+2025-01-16 18:18:13,513 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000451662/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:14,531 - INFO - Scraped job 294: Výzkumník strojového učení pro reklamní systémy at Seznam.cz, a.s.
+2025-01-16 18:18:14,532 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000451587/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:15,698 - INFO - Scraped job 295: C++ programátor pro hledání Mapy.cz/Firmy.cz at Seznam.cz, a.s.
+2025-01-16 18:18:15,699 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000451544/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:17,431 - WARNING - Could not find job description for Application Scientist at Thermo Fisher Scientific
+2025-01-16 18:18:17,431 - INFO - Scraped job 296: Application Scientist at Thermo Fisher Scientific
+2025-01-16 18:18:17,432 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000425131/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:19,324 - WARNING - Could not find job description for Junior Cloud Analyst at Accenture
+2025-01-16 18:18:19,325 - INFO - Scraped job 297: Junior Cloud Analyst at Accenture
+2025-01-16 18:18:19,325 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000451467/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:21,304 - WARNING - Could not find job description for Junior BI Developer at CPI Services, a.s.
+2025-01-16 18:18:21,304 - INFO - Scraped job 298: Junior BI Developer at CPI Services, a.s.
+2025-01-16 18:18:21,304 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000424822/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:22,564 - INFO - Scraped job 299: Výrobní inženýr/ka - mechanika (senior) at TESCAN GROUP, a.s.
+2025-01-16 18:18:22,564 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000451197/?searchId=dc765a6a-a346-4201-b8c3-e9d25e289f64&rps=233
+2025-01-16 18:18:24,580 - WARNING - Could not find job description for Software Engineer C++ at SYNERGIE, s.r.o.
+2025-01-16 18:18:24,580 - INFO - Scraped job 300: Software Engineer C++ at SYNERGIE, s.r.o.
+2025-01-16 18:18:26,586 - INFO - Scraping page 11 of 11...
+2025-01-16 18:18:26,586 - INFO - Fetching URL: https://www.jobs.cz/prace/?q[]=python&page=11
+2025-01-16 18:18:28,009 - INFO - Found 8 job items on page 11
+2025-01-16 18:18:28,009 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000256317/?searchId=f95e6f9a-3397-425e-96af-dcb10070a601&rps=233
+2025-01-16 18:18:29,561 - WARNING - Could not find job description for Správce/kyně SW infrastruktury at ČEPS, a.s.
+2025-01-16 18:18:29,561 - INFO - Scraped job 301: Správce/kyně SW infrastruktury at ČEPS, a.s.
+2025-01-16 18:18:29,561 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000233226/?searchId=f95e6f9a-3397-425e-96af-dcb10070a601&rps=233
+2025-01-16 18:18:31,034 - WARNING - Could not find job description for Automation Software Test Engineer at Thermo Fisher Scientific
+2025-01-16 18:18:31,034 - INFO - Scraped job 302: Automation Software Test Engineer at Thermo Fisher Scientific
+2025-01-16 18:18:31,035 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000417315/?searchId=f95e6f9a-3397-425e-96af-dcb10070a601&rps=233
+2025-01-16 18:18:32,688 - WARNING - Could not find job description for System Engineer for eMail (m/f) at T-Mobile Czech Republic a.s.
+2025-01-16 18:18:32,688 - INFO - Scraped job 303: System Engineer for eMail (m/f) at T-Mobile Czech Republic a.s.
+2025-01-16 18:18:32,688 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000390276/?searchId=f95e6f9a-3397-425e-96af-dcb10070a601&rps=233
+2025-01-16 18:18:33,828 - INFO - Scraped job 304: Lead Data Engineer at W.A.G. payment solutions, a.s.
+2025-01-16 18:18:33,828 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000449870/?searchId=f95e6f9a-3397-425e-96af-dcb10070a601&rps=233
+2025-01-16 18:18:34,785 - INFO - Scraped job 305: HPC Systems Engineer (f/m) at HCL TECHNOLOGIES CZECH REPUBLIC s.r.o.
+2025-01-16 18:18:34,785 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000449547/?searchId=f95e6f9a-3397-425e-96af-dcb10070a601&rps=233
+2025-01-16 18:18:36,132 - WARNING - Could not find job description for IT Data Analyst - backend part - freelance or fulltime at Manpower IT
+2025-01-16 18:18:36,132 - INFO - Scraped job 306: IT Data Analyst - backend part - freelance or fulltime at Manpower IT
+2025-01-16 18:18:36,132 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000388556/?searchId=f95e6f9a-3397-425e-96af-dcb10070a601&rps=233
+2025-01-16 18:18:37,555 - WARNING - Could not find job description for Internship - System Engineering, Vacuum Technology at Thermo Fisher Scientific
+2025-01-16 18:18:37,556 - INFO - Scraped job 307: Internship - System Engineering, Vacuum Technology at Thermo Fisher Scientific
+2025-01-16 18:18:37,556 - INFO - Fetching URL: https://www.jobs.cz/rpd/2000448139/?searchId=f95e6f9a-3397-425e-96af-dcb10070a601&rps=233
+2025-01-16 18:18:38,619 - INFO - Scraped job 308: Datový analytik/datová analytička v oblasti ekonomie zdravotnictví at Masarykova univerzita
+2025-01-16 18:18:38,619 - INFO - Successfully scraped 308 Python jobs across 11 pages
+2025-01-16 18:18:38,620 - INFO - Attempting to update Google Doc with ID: 1SD7BYd9sFppfFwm3xRc4zbnNSACGU1ZzOw9F0ZP_2H0
+2025-01-16 18:18:38,621 - INFO - Number of jobs to update: 308
+2025-01-16 18:19:14,943 - INFO - Successfully retrieved document
+2025-01-16 18:19:14,944 - INFO - Document end index: 432584
+2025-01-16 18:19:23,462 - INFO - Successfully updated Google Doc
+2025-01-16 18:19:23,468 - INFO - Script completed successfully

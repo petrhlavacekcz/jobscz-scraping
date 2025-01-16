@@ -121,6 +121,14 @@ class JobScraper:
             if not url.startswith('http'):
                 url = f"https://www.jobs.cz{url}"
                 
+            # Extract job ID from URL
+            job_id = None
+            id_match = re.search(r'/rpd/(\d+)/', url)
+            if id_match:
+                job_id = id_match.group(1)
+            else:
+                logging.warning(f"Could not extract job ID from URL: {url}")
+            
             # Find company name
             company_elem = job_item.find('span', {'translate': 'no'})
             company = company_elem.get_text(strip=True) if company_elem else ""
@@ -142,6 +150,7 @@ class JobScraper:
                 'company': company,
                 'location': location,
                 'url': url,
+                'job_id': job_id,
                 'text': job_text
             }
             
@@ -277,6 +286,7 @@ class JobScraper:
         for job in self.jobs:
             content += f"## {job['title']}\n"
             content += f"URL adresa: {job['url']}\n"
+            content += f"ID: {job['job_id']}\n"
             content += f"Společnost: {job['company']}\n"
             content += f"Lokalita: {job['location']}\n"
             content += f"Text inzerátu:\n{job['text']}\n\n---\n\n"
