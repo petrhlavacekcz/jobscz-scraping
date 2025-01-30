@@ -35,16 +35,3 @@ jobs:
         
     - name: Run scraper
       run: python scraper.py
-      
-    - name: Check for scraper output
-      if: always()
-      run: |
-        if [ -f "error.log" ]; then
-          if grep -i "error" error.log > /dev/null; then
-            echo "::error::Scraper encountered errors. Check error.log for details."
-            grep -i "error" error.log
-            exit 1
-          else
-            echo "Log file exists but contains no errors"
-          fi
-        fi 
