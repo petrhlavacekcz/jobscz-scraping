@@ -13,68 +13,98 @@ from abc import ABC, abstractmethod
 import time
 import sys
 
-# Set up logging
+# Configure logging to both file and console
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('error.log'),
-        logging.StreamHandler(sys.stdout)
+        logging.StreamHandler(sys.stdout)  # Log to console
     ]
 )
 
-# Load environment variables
+# Load environment variables from .env file
 load_dotenv()
 
 class JobBoardScraper(ABC):
-    """Abstract base class for job board scrapers."""
+    """
+    Abstract base class for job board scrapers.
+    This allows for easy extension to other job boards in the future.
+    """
     
     @abstractmethod
     def extract_job_text(self, soup: BeautifulSoup) -> str:
-        """Extract job description from the page."""
+        """
+        Abstract method that must be implemented by child classes.
+        Extracts job description text from a BeautifulSoup object.
+        """
         pass
         
     def clean_text(self, text: str) -> str:
-        """Clean up the extracted text."""
+        """
+        Cleans and formats the extracted text:
+        - Removes excessive newlines
+        - Removes multiple spaces
+        - Removes empty lines
+        Returns cleaned text string.
+        """
         if not text:
             return ""
             
-        # Remove multiple newlines
-        text = re.sub(r'\n{3,}', '\n\n', text)
-        # Remove multiple spaces
-        text = re.sub(r' +', ' ', text)
-        # Remove lines that are just whitespace
-        text = '\n'.join(line for line in text.split('\n') if line.strip())
+        text = re.sub(r'\n{3,}', '\n\n', text)  # Replace 3+ newlines with 2
+        text = re.sub(r' +', ' ', text)  # Replace multiple spaces with single space
+        text = '\n'.join(line for line in text.split('\n') if line.strip())  # Remove empty lines
         return text
 
 class JobsCzScraper(JobBoardScraper):
-    """Scraper for jobs.cz job listings."""
+    """
+    Specific implementation for jobs.cz website.
+    Inherits from JobBoardScraper and implements its abstract methods.
+    """
     
     def __init__(self):
+        """
+        Initialize with base URL and search parameters.
+        Currently only searches for Python jobs.
+        """
         self.base_url = "https://www.jobs.cz/prace/"
         self.search_params = {"q[]": "python"}
 
     def extract_job_text(self, soup: BeautifulSoup) -> str:
-        """Extract job description from jobs.cz."""
-        # Try to find the job description container
+        """
+        Extracts job description from jobs.cz specific HTML structure.
+        Removes unwanted elements like scripts, styles, nav, etc.
+        Returns cleaned job description text.
+        """
         content_div = soup.find('div', attrs={'data-jobad': 'body'})
         if not content_div:
             return ""
             
-        # Remove unwanted elements
+        # Remove unwanted HTML elements
         for element in content_div.find_all(['script', 'style', 'nav', 'header', 'footer']):
             element.decompose()
             
         return self.clean_text(content_div.get_text(separator='\n', strip=True))
 
 class JobScraper:
+    """
+    Main scraper class that coordinates the entire scraping process.
+    Handles job scraping, data processing, and output to Google Docs.
+    """
+    
     def __init__(self):
+        """
+        Initialize scraper with JobsCzScraper instance and empty jobs list.
+        Sets up Google Docs API connection.
+        """
         self.scraper = JobsCzScraper()
         self.jobs: List[Dict] = []
         self.setup_google_docs()
 
     def setup_google_docs(self):
-        """Setup Google Docs API client."""
+        """
+        Sets up Google Docs API client using service account credentials.
+        Credentials are loaded from environment variables.
+        """
         credentials_dict = json.loads(os.getenv('GOOGLE_SERVICE_ACCOUNT'))
         credentials = service_account.Credentials.from_service_account_info(
             credentials_dict,
@@ -83,10 +113,14 @@ class JobScraper:
         self.docs_service = build('docs', 'v1', credentials=credentials)
 
     def fetch_page(self, url: str) -> BeautifulSoup:
-        """Fetch and parse a webpage."""
+        """
+        Fetches a webpage and returns BeautifulSoup object.
+        Uses custom headers to mimic browser request.
+        Implements error handling and logging.
+        """
         try:
             headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
                 'Accept-Language': 'en-US,en;q=0.5',
                 'Connection': 'keep-alive',
@@ -96,14 +130,22 @@ class JobScraper:
             response = requests.get(url, headers=headers, timeout=10)
             response.raise_for_status()
             
-            soup = BeautifulSoup(response.text, 'html.parser')
-            return soup
+            return BeautifulSoup(response.text, 'html.parser')
         except Exception as e:
             logging.error(f"Error fetching {url}: {str(e)}")
             return None
 
     def extract_job_details(self, job_item: BeautifulSoup) -> Optional[Dict]:
-        """Extract job details from a jobs.cz listing."""
+        """
+        Extracts all relevant job details from a job listing:
+        - Title
+        - Company
+        - Location
+        - URL
+        - Job ID
+        - Full job description
+        Returns dictionary with job details or None if extraction fails.
+        """
         try:
             # Find job title
             title_elem = job_item.find('h2', class_='SearchResultCard__title')
@@ -159,7 +201,14 @@ class JobScraper:
             return None
 
     def get_total_pages(self) -> int:
-        """Get total number of pages with jobs."""
+        """
+        Determines total number of pages with job listings.
+        Handles pagination and checks for last page indicators:
+        - "Page not available" message
+        - Empty results
+        - No results message
+        Returns total number of pages found.
+        """
         page = 1
         while True:
             url = f"{self.scraper.base_url}?q[]={self.scraper.search_params['q[]']}&page={page}"
@@ -202,7 +251,15 @@ class JobScraper:
         return total_pages
 
     def scrape_jobs(self):
-        """Scrape Python jobs from jobs.cz."""
+        """
+        Main scraping function that:
+        1. Gets total number of pages
+        2. Iterates through each page
+        3. Extracts job listings from each page
+        4. Processes each job listing
+        Implements error handling and logging throughout.
+        Returns True if any jobs were successfully scraped.
+        """
         try:
             page = 1
             total_jobs_found = 0
@@ -279,7 +336,14 @@ class JobScraper:
             return False
 
     def create_markdown_content(self) -> str:
-        """Create markdown content from scraped jobs."""
+        """
+        Creates formatted markdown content from scraped jobs.
+        Includes:
+        - Current timestamp
+        - Total number of jobs
+        - Formatted details for each job
+        Returns formatted markdown string.
+        """
         current_time = datetime.now().strftime("%d.%m.%Y %H:%M")
         content = f"# Python pracovní nabídky\nPoslední aktualizace: {current_time}\nPočet nalezených nabídek: {len(self.jobs)}\n\n"
 
@@ -294,7 +358,14 @@ class JobScraper:
         return content
 
     def update_google_doc(self):
-        """Update Google Doc with job listings."""
+        """
+        Updates Google Doc with scraped job listings:
+        1. Retrieves existing document
+        2. Clears current content
+        3. Inserts new markdown content
+        Implements error handling and logging.
+        Returns True if update was successful.
+        """
         doc_id = os.getenv('GOOGLE_DOC_ID')
         if not doc_id:
             logging.error("Error: GOOGLE_DOC_ID not found in environment variables")
@@ -352,6 +423,14 @@ class JobScraper:
             return False
 
 def main():
+    """
+    Main entry point of the script.
+    Coordinates the entire process:
+    1. Creates scraper instance
+    2. Runs job scraping
+    3. Updates Google Doc
+    Implements error handling and proper exit codes.
+    """
     try:
         scraper = JobScraper()
         if not scraper.scrape_jobs():

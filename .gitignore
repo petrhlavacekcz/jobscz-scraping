@@ -40,3 +40,6 @@ debug_page.html
 # OS
 .DS_Store
 Thumbs.db 
+
+# Log
+error.log
